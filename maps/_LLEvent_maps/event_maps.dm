@@ -134,6 +134,7 @@
 	anchored = TRUE
 	var/is_active = FALSE
 	var/drill_timer = 5 MINUTES
+	var/is_drill = TRUE
 
 /obj/structure/fake_mining_drill/long_timer
 	drill_timer = 15 MINUTES
@@ -147,6 +148,7 @@
 	icon_state = "account_computer" //sprite by CeUvi
 	density = TRUE
 	anchored = TRUE
+	is_drill = FALSE
 
 /obj/structure/fake_mining_drill/console/attack_hand(user as mob)
 	..()
@@ -157,6 +159,7 @@
 			if("Yes")
 				for(var/obj/structure/fake_mining_drill/FMD in oview(7))
 					FMD.start()
+				return
 			else
 				return
 
@@ -165,13 +168,13 @@
 	set_light(7, 5, "#999999")
 
 /obj/structure/fake_mining_drill/proc/start()
-	if(!is_active)
-		icon = "mining_drill_error"
+	if(!is_active && is_drill)
+		icon_state = "mining_drill_error"
 		addtimer(CALLBACK(src, .proc/stop), drill_timer, TIMER_STOPPABLE)
 
 /obj/structure/fake_mining_drill/proc/stop()
 	new /obj/item/oddity/drilldocs(src.loc)
-	icon = "mining_drill"
+	icon_state = "mining_drill"
 
 /obj/item/oddity/drilldocs
 	name = "gas reading research"
