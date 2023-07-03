@@ -22,10 +22,6 @@
 /obj/effect/floor_decal/industrial/road/straight3,
 /turf/simulated/floor/snow,
 /area/event_gascaves/outside)
-"cz" = (
-/mob/living/silicon/robot/drone/blitzshell,
-/turf/simulated/floor/rock/dark,
-/area/event_gascaves)
 "cV" = (
 /turf/simulated/wall,
 /area/event_gascaves)
@@ -1189,7 +1185,7 @@ yU
 yU
 fu
 yU
-cz
+Of
 yU
 Qq
 yU
@@ -1629,7 +1625,7 @@ uI
 yU
 fu
 yU
-cz
+Of
 yU
 Qq
 yU
@@ -9381,7 +9377,7 @@ uI
 yU
 fu
 yU
-cz
+Of
 yU
 Qq
 yU
@@ -15476,7 +15472,7 @@ yU
 yU
 fu
 yU
-cz
+Of
 yU
 Qq
 yU
@@ -21841,7 +21837,7 @@ uI
 yU
 fu
 yU
-cz
+Of
 yU
 Qq
 yU
