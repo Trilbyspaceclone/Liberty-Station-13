@@ -105,7 +105,7 @@
 	height = 1
 
 /obj/effect/shuttle_landmark/event_map_gascaves
-	name = "Cave Entrence Landing zone"
+	name = "Cave Entrance Landing zone"
 	icon_state = "shuttle-green"
 	landmark_tag = "nav_gas_caves"
 	base_area = /area/event_gascaves/outside
@@ -127,7 +127,7 @@
 
 /obj/structure/fake_mining_drill
 	name = "Gas Sonar"
-	desc = "A highly advanced gas scanning sonar, silent to the ears for you, but not them..."
+	desc = "A highly-advanced gas scanning sonar. It works almost silently, in a frequency inaudible to you, but clearly perceived by others..."
 	icon = 'maps/_LLEvent_maps/event_stuff.dmi'
 	icon_state = "mining_drill" //sprite by CeUvi
 	density = TRUE
@@ -144,7 +144,7 @@
 
 /obj/structure/fake_mining_drill/console
 	name = "Gas Sonar Activation Console"
-	desc = "A Simple console that when intracted with at all turns on the gas sonar, but cant stop it."
+	desc = "A simple, delerict console that starts the Gas Sonar. The controls to turn it off, however, have been broken beyond repair. You best make sure you're ready to face the consequences of starting that which cannot be stopped before interacting with it..."
 	icon_state = "account_computer" //sprite by CeUvi
 	density = TRUE
 	anchored = TRUE
@@ -154,7 +154,7 @@
 	..()
 	var/user_is_choosing = TRUE
 	while(user_is_choosing)
-		var/action = alert(user, "Turn On the Drill?", "Turn On the Drill?", "No", "Yes", "Cancel")
+		var/action = alert(user, "Turn on the Gas Sonar? It cannot be stopped once started!", "Turn on the Gas Sonar?", "No", "Yes")
 		switch(action)
 			if("Yes")
 				for(var/obj/structure/fake_mining_drill/FMD in oview(7))
