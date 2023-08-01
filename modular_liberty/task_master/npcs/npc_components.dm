@@ -127,7 +127,7 @@
 	if(knight_in_shining_armour.real_name != user.name)
 		return
 
-	snow_white.visible_message("Thank you for the wax! Here are some items as a reward.")
+	snow_white.visible_message("[npc_name] buzzies \"Thank you for the wax! Here are some items as a reward.\"")
 	new /obj/random/pouch/hardcase(user.loc)
 	if(swap_reward)
 		new /obj/random/medical_lowcost/always_spawn(user.loc)

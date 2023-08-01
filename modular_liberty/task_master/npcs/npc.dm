@@ -8,46 +8,64 @@
 	var/give_comp
 	var/list/players
 
-/obj/structure/npc/hear_talk(mob/living/carbon/human/H, message, verb, datum/language/speaking, speech_volume, message_pre_problems)
-	log_and_message_admins("NPC heard and pass start.")
+/obj/structure/npc/New()
+	..()
+	add_hearing()
+
+/obj/structure/npc/Destroy()
+	remove_hearing()
+	. = ..()
+
+/obj/structure/npc/hear_talk(mob/M, msg, verb, datum/language/speaking, speech_volume)
+//	log_and_message_admins("NPC heard and pass start.")
 	var/aready_given = FALSE
-	if(ishuman(H) && give_comp)
-		for(var/datum/npc_quest/checkme in src.players?.len)
+	if(ishuman(M) && give_comp)
+		var/mob/living/carbon/human/H = M
+
+		if(!players)
+//			log_and_message_admins("No lens Found.")
+			var/datum/npc_quest/new_quest = new give_comp(H, src)
+			LAZYADD(players, new_quest)
+
+		for(var/datum/npc_quest/checkme in players)
+//			log_and_message_admins("NPC Looping.[checkme.knight_in_shining_armour.real_name] vs [H.real_name]")
 			if(checkme.knight_in_shining_armour.real_name == H.real_name)
 				aready_given = TRUE
-				log_and_message_admins("Talk heard, with [H.name] saying [message].")
-				checkme.hear_me(H, message)
+//				log_and_message_admins("Talk heard, with [H.name] saying [msg].")
+				checkme.hear_me(H, msg)
+
 		if(!aready_given)
+//			log_and_message_admins("Not Found.")
 			var/datum/npc_quest/new_quest = new give_comp(H, src)
-			players += new_quest
+			LAZYADD(players, new_quest)
 
-			log_and_message_admins("NPC heard and were giving the compnent.")
+//			log_and_message_admins("NPC heard and were giving the compnent.")
 
-		log_and_message_admins("NPC heard and passed through.")
+//		log_and_message_admins("NPC heard and passed through.")
 
 	..()
 
 /obj/structure/npc/examine(mob/user)
 	..()
-	log_and_message_admins("NPC Seen 1.")
+//	log_and_message_admins("NPC Seen 1.")
 	var/aready_given = FALSE
 	if(ishuman(user) && give_comp)
 		var/mob/living/carbon/human/H = user
 
 		if(!players)
-			log_and_message_admins("No lens Found.")
+//			log_and_message_admins("No lens Found.")
 			var/datum/npc_quest/new_quest = new give_comp(H, src)
 			LAZYADD(players, new_quest)
 
 		for(var/datum/npc_quest/checkme in players)
-			log_and_message_admins("NPC Looping.[checkme.knight_in_shining_armour.real_name] vs [H.real_name]")
+//			log_and_message_admins("NPC Looping.[checkme.knight_in_shining_armour.real_name] vs [H.real_name]")
 			if(checkme.knight_in_shining_armour.real_name == H.real_name)
 				aready_given = TRUE
 				checkme.on_examine(H)
-				log_and_message_admins("Found.")
+//				log_and_message_admins("Found.")
 
 		if(!aready_given)
-			log_and_message_admins("Not Found.")
+//			log_and_message_admins("Not Found.")
 			var/datum/npc_quest/new_quest = new give_comp(H, src)
 			LAZYADD(players, new_quest)
 
