@@ -93,7 +93,7 @@
 		snow_white.visible_message("[npc_name] buzzies \"Yes I do, I need an endless - er I mean one, wax coating. For now at lest...\"")
 
 	if(message == "[npc_name] What will you give in return?" && quest_stared)
-		snow_white.visible_message("[npc_name] buzzies \"I can give you a fancy card and a random harcase, that has some items inside.\"")
+		snow_white.visible_message("[npc_name] buzzies \"I can give you a fancy card and a random harcase, that may have some items inside.\"")
 
 	if(message == "[npc_name] How do I get a wax coating?" && quest_stared)
 		snow_white.visible_message("[npc_name] buzzies \"Well you can make it by hand, or like find it somewere, if I knew for sure id not ask you for it.\"")
@@ -127,7 +127,7 @@
 	if(knight_in_shining_armour.real_name != user.name)
 		return
 
-	snow_white.visible_message("[npc_name] buzzies \"Thank you for the wax! Here are some items as a reward.\"")
+	snow_white.visible_message("[npc_name] buzzies \"Thank you for the wax! Here are some items as a reward. Could you bring me more?\"")
 	new /obj/random/pouch/hardcase(user.loc)
 	if(swap_reward)
 		new /obj/random/medical_lowcost/always_spawn(user.loc)
