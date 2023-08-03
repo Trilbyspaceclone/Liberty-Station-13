@@ -88,9 +88,9 @@
 		return
 
 	log_and_message_admins("Talk heard 2, with [user.name] saying [message].")
-	if(message == "[npc_name] do you require anything?")
+	if(message == "[npc_name], do you require anything?")
 		quest_stared = TRUE
-		snow_white.visible_message("[npc_name] buzzies \"Yes I do, I need an endless - er I mean one, wax coating. For now at lest...\"")
+		snow_white.visible_message("[npc_name] buzzies \"Yes I do, I need an endless - er I mean one, wax coating. For now at least...\"")
 
 	if(message == "[npc_name] What will you give in return?" && quest_stared)
 		snow_white.visible_message("[npc_name] buzzies \"I can give you a fancy card and a random harcase, that may have some items inside.\"")
@@ -98,12 +98,12 @@
 	if(message == "[npc_name] How do I get a wax coating?" && quest_stared)
 		snow_white.visible_message("[npc_name] buzzies \"Well you can make it by hand, or like find it somewere, if I knew for sure id not ask you for it.\"")
 
-	if(message == "[npc_name] I dont like your current reward." && quest_stared)
+	if(message == "[npc_name] I don't like your current reward." && quest_stared)
 		if(swap_reward)
-			snow_white.visible_message("[npc_name] buzzies \"<span class='warning'>Mhfp! Im changing it back to a card!</span>\"")
+			snow_white.visible_message("[npc_name] buzzes, \"<span class='warning'>Hmp! I'm changing it back to just a card, then!</span>\"")
 			swap_reward = FALSE
 		else
-			snow_white.visible_message("[npc_name] buzzies \"Well, alright I have some spare medical items ill give you over the card...\"")
+			snow_white.visible_message("[npc_name] buzzes, \"Well, alright. I have some spare medical items I can give you instead of the card...\"")
 			swap_reward = TRUE
 
 /datum/npc_quest/wax_wanter/on_examine(mob/living/user)
@@ -111,13 +111,13 @@
 		return
 
 	if(quest_stared)
-		snow_white.visible_message("To ask a reminder of the task: [npc_name] do you require anything?")
+		snow_white.visible_message("To ask a reminder of the task: [npc_name], do you require anything?")
 		snow_white.visible_message("To ask about a reward: [npc_name] What will you give in return?")
 		snow_white.visible_message("To ask how to do the task: [npc_name] How do I get a wax coating?")
-		snow_white.visible_message("To for an alternative reward: [npc_name] I dont like your current reward.")
+		snow_white.visible_message("To ask for a chance at an alternative reward: [npc_name] I don't like your current reward.")
 		return
 
-	snow_white.visible_message("To start the task: [npc_name] do you require anything?")
+	snow_white.visible_message("To start the task: [npc_name], do you require anything?")
 
 
 /datum/npc_quest/wax_wanter/complete_quest(mob/living/user)
