@@ -96,7 +96,7 @@
 		snow_white.visible_message("[npc_name] buzzies \"I can give you a fancy card and a random harcase, that may have some items inside.\"")
 
 	if(message == "[npc_name] How do I get a wax coating?" && quest_stared)
-		snow_white.visible_message("[npc_name] buzzies \"Well you can make it by hand, or like find it somewere, if I knew for sure id not ask you for it.\"")
+		snow_white.visible_message("[npc_name] buzzes, \"Well, you can make it by hand or like find it somewere. If I knew for sure I'd not ask you for it...\"")
 
 	if(message == "[npc_name] I don't like your current reward." && quest_stared)
 		if(swap_reward)
