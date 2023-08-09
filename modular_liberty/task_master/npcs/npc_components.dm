@@ -8,16 +8,30 @@
 	var/list/card_name = list("Jane Doe")
 	var/quest_item = /obj/item/reagent_containers/food/snacks/cookie
 
-	/*
-	Item quests, i.e bring me an item or items
-	Not really used for anything but as an exsample
+	var/item_quest = FALSE
+	var/swap_reward = FALSE
+	var/steps = 1
 
-	var/quest_item_message = "I require a cookie!!!"
-	var/quest_item = /obj/item/reagent_containers/food/snacks/cookie
-	var/quest_item_amount = 1 //This is how many items are required to finish the quest
-	var/quest_item_complete_message "Thank you for the cookie, here is a jug of milk."
-	var/quest_item_reward = /obj/item/reagent_containers/food/drinks/milk
-	*/
+	var/step_annoucer = FALSE
+
+	var/talk_ver = "says"
+
+	var/ask_question = "do you require anything?"
+	var/ask_question_answer = "..."
+
+	var/reward_question = "What will you give in return?"
+	var/reward_question_answer = "..."
+	var/reward_question_answer_swapped = "..."
+	var/reward_question_answer_swapped_back = "?!?"
+
+	var/quest_question = "?"
+	var/quest_question_answer = "..."
+
+	var/change_question = "I don't like your current reward."
+	var/change_question_answer = "..."
+	var/change_question_answer_two = "..."
+
+	var/complete_words = "Quest Completed"
 
 /datum/npc_quest/New(knight_name, sleepy_apple)
 	if(knight_name)
@@ -25,52 +39,92 @@
 	if(sleepy_apple)
 		snow_white = sleepy_apple
 
-/datum/npc_quest/proc/attempt_give(obj/item/A, mob/living/user)
+/datum/npc_quest/proc/check_knightnquest(mob/living/user)
 	if(knight_in_shining_armour.real_name != user.name)
-		return
+		return FALSE
 
 	if(!quest_stared)
+		return FALSE
+
+	return TRUE
+
+/datum/npc_quest/proc/attempt_give(obj/item/A, mob/living/user)
+	if(!check_knightnquest(user))
 		return
-/*
-	if(istype(A, quest_item))
-		if(istype(quest_item, /obj/item/stack))
-			var/obj/item/stack/S = quest_item
-			if(S.get_amount() < S.max_amount)
-				to_chat(user, "<span class='warning'>[npc_name] stares blankly at the less then full stack.</span>")
-				return
 
-		quest_item_amount -= 1
-		qdel(A)
+	if(item_quest)
+		if(istype(A, quest_item))
+			qdel(A)
+			next_quest_step(user)
+			return TRUE
 
-	if(quest_item_amount >= 0)
-		complete_quest(user)
-*/
-	return
+	return FALSE
 
 /datum/npc_quest/proc/complete_quest(mob/living/user)
-	if(!user || !quest_stared)
+	if(!check_knightnquest(user))
 		return
 
-	if(knight_in_shining_armour.real_name != user.name)
+/datum/npc_quest/proc/next_quest_step_annoucement(mob/living/user)
+	if(!check_knightnquest(user))
 		return
-/*
- - Most quests will be edited over
-	if(quest_item_complete_message)
-		to_chat(user, "<span class='warning'>[quest_item_complete_message]</span>")
 
-	if(quest_item_reward)
-		new quest_item_reward(user.loc)
+/datum/npc_quest/proc/next_quest_step(mob/living/user)
+	if(!check_knightnquest(user))
+		return
 
-	if(ishuman(user))
-		var/mob/living/carbon/human/H = user
-		H.learnt_tasks.attempt_add_task_mastery(/datum/task_master/task/self_value, "MASTER_QUEST_COMPLETER", skill_gained = 5, learner = H)
-		H.learnt_tasks.get_task_mastery_and_proc("MASTER_QUEST_COMPLETER")
-*/
+	steps -= 1
+
+	if(step_annoucer)
+		next_quest_step_annoucement(user)
+
+	if(steps < 1)
+		complete_quest(user)
+
 
 /datum/npc_quest/proc/on_examine(mob/living/user)
+	if(user.real_name != knight_in_shining_armour.real_name)
+		return
+
+	if(quest_stared)
+		if(ask_question)
+			snow_white.visible_message("To ask a reminder of the task: [npc_name], [ask_question]")
+		if(reward_question)
+			snow_white.visible_message("To ask about a reward: [npc_name] [reward_question]")
+		if(quest_question)
+			snow_white.visible_message("To ask how to do the task: [npc_name] [quest_question]")
+		if(change_question)
+			snow_white.visible_message("To ask for a chance at an alternative reward: [npc_name] [change_question]")
+		return
+
+	snow_white.visible_message("To start the task: [npc_name], [ask_question]")
+
 	return
 
 /datum/npc_quest/proc/hear_me(mob/living/user, message)
+	if(!check_knightnquest(user))
+		return
+
+	if(message == "[npc_name], [ask_question]")
+		quest_stared = TRUE
+		snow_white.visible_message("[npc_name] [talk_ver] \"[ask_question_answer]\"")
+
+	if(message == "[npc_name] [reward_question]" && quest_stared)
+		if(swap_reward)
+			snow_white.visible_message("[npc_name] [talk_ver] \"[reward_question_answer]\"")
+		else
+			snow_white.visible_message("[npc_name] [talk_ver] \"[reward_question_answer_swapped]\"")
+
+	if(message == "[npc_name] [quest_question]" && quest_stared)
+		snow_white.visible_message("[npc_name] [talk_ver], \"[quest_question_answer]\"")
+
+	if(message == "[npc_name] [change_question]" && quest_stared)
+		if(swap_reward)
+			snow_white.visible_message("[npc_name] [talk_ver], \"<span class='warning'>[change_question_answer]</span>\"")
+			swap_reward = FALSE
+		else
+			snow_white.visible_message("[npc_name] [talk_ver], \"[reward_question_answer_swapped_back]\"")
+			swap_reward = TRUE
+
 	return
 
 //Types
@@ -80,54 +134,25 @@
 	card_name = list("Wax Hive", "Beekeeper", "Buzzy Bee")
 
 	quest_item  = /obj/item/tool_upgrade/productivity/waxcoat
-	var/swap_reward = FALSE
+	talk_ver = "buzzes"
+	quest_question = "How do I get a wax coating?"
+	ask_question_answer = "Yes I do, I need an endless - er I mean one, wax coating. For now at least..."
 
-/datum/npc_quest/wax_wanter/hear_me(mob/living/user, message)
-	if(user.real_name != knight_in_shining_armour.real_name)
-		log_and_message_admins("Talk unheard, with [user.name] saying [message].")
-		return
 
-	log_and_message_admins("Talk heard 2, with [user.name] saying [message].")
-	if(message == "[npc_name], do you require anything?")
-		quest_stared = TRUE
-		snow_white.visible_message("[npc_name] buzzies \"Yes I do, I need an endless - er I mean one, wax coating. For now at least...\"")
+	reward_question_answer = "I can give you a random harcase, that may have some items inside."
+	reward_question_answer_swapped = "Im giving you a card currently!"
+	reward_question_answer_swapped_back = "Well, alright. I have some spare medical items I can give you instead of the card..."
 
-	if(message == "[npc_name] What will you give in return?" && quest_stared)
-		snow_white.visible_message("[npc_name] buzzies \"I can give you a fancy card and a random harcase, that may have some items inside.\"")
 
-	if(message == "[npc_name] How do I get a wax coating?" && quest_stared)
-		snow_white.visible_message("[npc_name] buzzes, \"Well, you can make it by hand or like find it somewere. If I knew for sure I'd not ask you for it...\"")
+	quest_question_answer = "Well, you can make it by hand or like find it somewere. If I knew for sure I'd not ask you for it..."
+	change_question_answer = "Hmp! I'm changing the reward to just card, then!"
 
-	if(message == "[npc_name] I don't like your current reward." && quest_stared)
-		if(swap_reward)
-			snow_white.visible_message("[npc_name] buzzes, \"<span class='warning'>Hmp! I'm changing it back to just a card, then!</span>\"")
-			swap_reward = FALSE
-		else
-			snow_white.visible_message("[npc_name] buzzes, \"Well, alright. I have some spare medical items I can give you instead of the card...\"")
-			swap_reward = TRUE
-
-/datum/npc_quest/wax_wanter/on_examine(mob/living/user)
-	if(user.real_name != knight_in_shining_armour.real_name)
-		return
-
-	if(quest_stared)
-		snow_white.visible_message("To ask a reminder of the task: [npc_name], do you require anything?")
-		snow_white.visible_message("To ask about a reward: [npc_name] What will you give in return?")
-		snow_white.visible_message("To ask how to do the task: [npc_name] How do I get a wax coating?")
-		snow_white.visible_message("To ask for a chance at an alternative reward: [npc_name] I don't like your current reward.")
-		return
-
-	snow_white.visible_message("To start the task: [npc_name], do you require anything?")
-
+	complete_words = "Thank you for the wax! Here are some items as a reward. Could you bring me more?"
 
 /datum/npc_quest/wax_wanter/complete_quest(mob/living/user)
-	if(!user || !quest_stared)
-		return
+	..()
 
-	if(knight_in_shining_armour.real_name != user.name)
-		return
-
-	snow_white.visible_message("[npc_name] buzzies \"Thank you for the wax! Here are some items as a reward. Could you bring me more?\"")
+	snow_white.visible_message("[npc_name] [talk_ver] \"[complete_words]\"")
 	new /obj/random/pouch/hardcase(user.loc)
 	if(swap_reward)
 		new /obj/random/medical_lowcost/always_spawn(user.loc)
@@ -137,16 +162,7 @@
 		var/obj/item/card_carp/death_card/death_card = new /obj/item/card_carp/death_card(user.loc)
 		death_card.generate(1, pick(card_name))
 	user.mind.individual_objectives_completed++
+	steps = initial(steps)
 
 	return
-
-/datum/npc_quest/wax_wanter/attempt_give(obj/item/A, mob/living/user)
-	..()
-
-	if(istype(A, quest_item))
-		qdel(A)
-		complete_quest(user)
-		return TRUE
-
-	return FALSE
 
