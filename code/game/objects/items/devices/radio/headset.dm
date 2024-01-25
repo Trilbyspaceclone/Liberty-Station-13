@@ -185,7 +185,7 @@
 	icon_state = "wo_headset_bowman"
 
 /obj/item/device/radio/headset/heads/bscom
-	name = "blackshield commander headset"
+	name = "Deputy chief headset"
 	desc = "The headset of the men who protects your worthless lives. This has a small symbol denoting its built-in backup transmitter."
 	icon_state = "bscom_headset"
 	item_state = "headset"
@@ -193,7 +193,7 @@
 	ks2type = /obj/item/device/encryptionkey/heads/hos
 
 /obj/item/device/radio/headset/heads/bscom/bowman
-	name = "blackshield commander bowman headset"
+	name = "Deputy chief bowman headset"
 	desc = "The headset of the men who protects your worthless lives, in a comfortable bowman style.\nThis has a small symbol denoting its built-in backup transmitter."
 	icon_state = "bs_bowman_headset"
 	item_state = "bs_bowman_headset"
