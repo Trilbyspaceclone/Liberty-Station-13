@@ -105,7 +105,7 @@ Bullet also tend to have more armor against them do to this and can be douged un
 	var/range_step = 5		//projectile will lose a fragment each time it travels this distance. Can be a non-integer.
 	var/base_spread = 90	//lower means the pellets spread more across body parts. If zero then this is considered a shrapnel explosion instead of a shrapnel cone
 	var/spread_step = 10	//higher means the pellets spread more across body parts with distance
-	var/agony =10	 //so they actually kill a bug or do something against heavy armored opponents, mostly a slowdown on pvp but a kill in pve
+	agony = 10	 //so they actually kill a bug or do something against heavy armored opponents, mostly a slowdown on pvp but a kill in pve
 /obj/item/projectile/bullet/pellet/Bumped()
 	. = ..()
 	bumped = 0 //can hit all mobs in a tile. pellets is decremented inside attack_mob so this should be fine.

@@ -353,7 +353,7 @@
 	/obj/item/tool/knife/boot = 1,
 	/obj/item/reagent_containers/food/drinks/bottle/vodka = 1)
 
-obj/item/storage/deferred/crate/rebel1
+/obj/item/storage/deferred/crate/rebel1
 	name = "Populist Leader Gear kit"
 	desc = "A moderately sized crate full of populist gear to lead them to victory."
 	icon_state = "khambataar_deferred"
