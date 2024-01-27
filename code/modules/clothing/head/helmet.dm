@@ -1172,3 +1172,36 @@
 	matter = list(MATERIAL_STEEL = 20, MATERIAL_BIO_SILK = 5)
 	max_upgrades = 2
 
+//Freeport: Liberty ‘Khambataar’ insurgency.!11!
+
+/obj/item/clothing/head/helmet/rebel
+	name = "Populist Raider Helmet"//top guy on the rebel team
+	desc = "An Formidable Helmet Made by the finest populist armorers of The Great General Khambataar, The Bravest Fighters and Leaders of the populism use this sign of power,The Iron Eagle Troopers Already Are Destroyed! your mission is Continue with The Watchmen Comrade, Lead Your Fighters To Victory!!. "
+	icon_state = "rebel_heavy_helmet"
+	icon_state = "rebel_heavy_helmet"
+	armor_list = list(melee = 45, bullet = 45,energy = 45, bomb = 45, bio = 0, rad = 0)
+	body_parts_covered = HEAD|EARS|FACE
+
+/obj/item/clothing/head/helmet/rebel1//WOAH REBEL1!?!?!
+	name = "Populist Combat Helmet"//infantry/combat tech and medic gear
+	desc = "An heavy and sturdy helmet produced by the Populist armorers for the popular fighters of the General Khambataar. simple and effective stills being the terror of The iron eagle troopers."
+	icon_state = "rebel_heavy_cap"
+	icon_state = "rebel_heavy_cap"
+	armor_list = list(melee = 35, bullet = 35,energy = 35, bomb = 25, bio = 0, rad = 0)
+	body_parts_covered = HEAD|EARS|FACE
+
+/obj/item/clothing/head/helmet/rebel2
+	name = "Populist Combat Helmet"//infantry/combat tech and medic gear
+	desc = "An heavy and sturdy helmet produced by the Populist armorers for the popular fighters of the General Khambataar. simple and effective stills being the terror of The iron eagle troopers."
+	icon_state = "rebel_heavy_warhat"
+	icon_state = "rebel_heavy_warhat"
+	armor_list = list(melee = 35, bullet = 35,energy = 35, bomb = 25, bio = 0, rad = 0)
+	body_parts_covered = HEAD|EARS|FACE
+
+/obj/item/clothing/head/helmet/rebel3
+	name = "Populist Combat Helmet"//infantry/combat tech and medic gear
+	desc = "An Light and sturdy armored ushanka produced by the Populist armorers for the popular fighters of the General Khambataar. simple and effective stills being the most effective armor to hide and use in the attacks."
+	icon_state = "rebel_impro_cap"
+	icon_state = "rebel_impro_cap"
+	armor_list = list(melee = 35, bullet = 35,energy = 35, bomb = 25, bio = 0, rad = 0)
+	body_parts_covered = HEAD|EARS|FACE

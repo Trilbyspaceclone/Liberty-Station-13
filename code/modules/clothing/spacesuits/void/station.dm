@@ -270,19 +270,19 @@
 	//Security
 /obj/item/clothing/head/helmet/space/void/security
 	name = "watchmen voidsuit helmet"
-	desc = "A special helmet designed for work in a hazardous, low pressure environment. Has an additional layer of armor."
+	desc = "An Highly Armored Voidsuit Helmet Made By the Worker union and The Custodians using Surplus Helmets from the Federation, it has extra layers of armor and upgraded face protector, this helmet sports Watchmen Colours."
 	icon_state = "ihsvoidhelm"
 	item_state = "ihsvoidhelm"
 	item_state_slots = list(
-		slot_l_hand_str = "sec_helm",
-		slot_r_hand_str = "sec_helm",
+		slot_l_hand_str = "technohelmet_light",
+		slot_r_hand_str = "technohelmet_light",
 		)
 	obscuration = MEDIUM_OBSCURATION
 
 	armor_list = list(
-		melee = 50,
-		bullet = 40,
-		energy = 40,
+		melee = 40,
+		bullet = 45,
+		energy = 45,
 		bomb = 40,
 		bio = 100,
 		rad = 75
@@ -294,13 +294,13 @@
 /obj/item/clothing/suit/space/void/security
 	name = "watchmen voidsuit"
 	icon_state = "ihvoidsuit"
-	desc = "A bulky suit that protects against hazardous, low pressure environments. Sacrifices mobility for protection"
+	desc = "A bulky suit that was made by the Worker Union and The Custodians, has extra layers of armors and Sports Watchmen Colours"
 	item_state = "ihvoidsuit"
 	slowdown = 1
 	armor_list = list(
-		melee = 50,
-		bullet = 40,
-		energy = 40,
+		melee = 40,
+		bullet = 45,
+		energy = 45,
 		bomb = 40,
 		bio = 100,
 		rad = 75
@@ -312,16 +312,58 @@
 	boots = /obj/item/clothing/shoes/magboots
 	tank = /obj/item/tank/jetpack/oxygen
 
-/obj/item/clothing/head/helmet/space/void/odst
-	name = "Sol Federation voidsuit helmet"
-	desc = "A helmet designed for military EVA operations, though not direct combat has a small light."
-
+/obj/item/clothing/head/helmet/space/void/federalistG
+	name = "Terran Federation voidsuit helmet"
+	desc = "An Antique helmet design for military operations, it seems to be unpainted so it's hard to know if was an official Federalist helmet or just a copy, besides that the helmet looks solid even if is decades outdated in design."
 	action_button_name = "Toggle Headlamp"
-	brightness_on = 3 //luminosity when on
-	light_overlay = "hardhat_light"
+	brightness_on = 6 //luminosity when on
+	light_overlay = "technohelmet_light"
 
-	icon_state = "odst"
-	item_state = "odst"
+	icon_state = "greyarmor"
+	item_state = "greyarmor"
+	item_state_slots = list(
+		slot_l_hand_str = "sec_helm",
+		slot_r_hand_str = "sec_helm",
+		)
+
+	armor_list = list(
+		melee = 50,
+		bullet = 40,
+		energy = 40,
+		bomb = 40,
+		bio = 100,
+		rad = 75
+	)
+	siemens_coefficient = 0.7
+	light_overlay = "technohelmet_light"
+	obscuration = MEDIUM_OBSCURATION
+
+/obj/item/clothing/suit/space/void/federalistG
+	name = "Terran Federation Surplus Combat Voidsuit"
+	desc = "An Antique Design of Combat Voidsuit used by the Terran Federation Troopers Decades ago, it didn't saw wars but was used on colonization and defense missions on the Galaxy Frontiers, it has extra layers of armor against stabs, claws and acid? this armor set seems to have been unpainted so is hard to see if is an Official Federation Armor or a Copy, despite that the armor is a Well manufactured Combat protection that makes very hard see the lost of a Limb or a Proyectile getting Through the Armor..."
+	icon_state = "grayarmor"
+	item_state = "grayarmor"
+	slowdown = 1
+	armor_list = list(
+		melee = 55,
+		bullet = 40,
+		energy = 45,
+		bomb = 40,
+		bio = 100,
+		rad = 75
+	)
+	siemens_coefficient = 0.7
+	helmet = /obj/item/clothing/head/helmet/space/void/federalistG
+
+/obj/item/clothing/head/helmet/space/void/federalistIE
+	name = "Iron Eagle voidsuit helmet"
+	desc = "An Helmet of Outdated Military Design Used by The Iron Eagle Troopers in Space or in Special Operation Missions on Colony Ground."
+	action_button_name = "Toggle Headlamp"
+	brightness_on = 6 //luminosity when on
+	light_overlay = "technohelmet_light"
+
+	icon_state = "iron_eagle_void"
+	item_state = "iron_eagle_void"
 	item_state_slots = list(
 		slot_l_hand_str = "sec_helm",
 		slot_r_hand_str = "sec_helm",
@@ -339,16 +381,33 @@
 	light_overlay = "helmet_light_ihs"
 	obscuration = MEDIUM_OBSCURATION
 
-/obj/item/clothing/suit/space/void/odst
-	name = "Terran Federation voidsuit"
+/obj/item/clothing/suit/space/void/federalistIE
+	name = "Iron Eagle Combat Voidsuit"
+	desc = "An Highly Armored Voidsuit of Outdated Military Design Used by The Iron Eagle Troopers in Space or in Special Operations on Colony Grounds, The Worst Nightmare of Criminal Gangs, Rebels Or Mutants who Remember what is Feel Fear From Something used to be a team of troopers using this piece of armor, now is an antique armor that used to mean something."
+	icon_state = "iron_eagle_void"
+	item_state = "iron_eagle_void"
+	slowdown = 1
+	armor_list = list(
+		melee = 50,
+		bullet = 45,
+		energy = 45,
+		bomb = 45,
+		bio = 100,
+		rad = 75
+	)
+	siemens_coefficient = 0.7
+	helmet = /obj/item/clothing/head/helmet/space/void/federalistIE
+
+/*/obj/item/clothing/suit/space/void/odst
+	name = "Terran Federation Surplus Combat Voidsuit"
 	desc = "Do you wanna be a hero in the sky? High adventure, higher pay, join the Space Marines today."
 	icon_state = "odst"
 	item_state = "odst"
 	slowdown = 1
 	armor_list = list(
-		melee = 50,
+		melee = 55,
 		bullet = 40,
-		energy = 40,
+		energy = 45,
 		bomb = 40,
 		bio = 100,
 		rad = 75
@@ -400,6 +459,7 @@
 	icon_state = "odst_purple"
 	item_state = "odst_purple"
 	helmet = /obj/item/clothing/head/helmet/space/void/odst/purple
+	*////erased from history for now
 
 //Atmospherics Rig (BS12)
 /obj/item/clothing/head/helmet/space/void/atmos

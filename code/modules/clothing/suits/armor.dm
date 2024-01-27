@@ -331,7 +331,7 @@
 	modifiable = FALSE
 	matter = list(MATERIAL_STEEL = 30, MATERIAL_PLASTEEL = 16, MATERIAL_BIO_SILK = 30, MATERIAL_PLASTIC = 15)
 
-//Guild
+//Worker Union
 /obj/item/clothing/suit/armor/vest/technomancersuit
 	name = "'Mark V' environmental protection suit"
 	desc = "For working in hazardous environments. While it is built for most environments, one of those is not space. As a tradeoff, it can be modified more."
@@ -892,13 +892,14 @@
 
 /obj/item/clothing/suit/armor/hos
 	name = "deputy chief armored coat"
-	desc = "A greatcoat enhanced with a special alloy for some protection and style."
+	desc = "An Armored greatcoat enhanced with a special alloy for some protection and style."
 	icon_state = "watch_deputy"
+	item_state = "watch_deputy"
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS|LEGS
 	armor_list = list(
 		melee = 40,
 		bullet = 40,
-		energy = 30,
+		energy = 35,
 		bomb = 25,
 		bio = 0,
 		rad = 0
@@ -1134,3 +1135,44 @@
 			speed_boost_ready = TRUE
 			if(user.head && istype(user.head, matching_helmet))
 				to_chat(usr, SPAN_WARNING("[user.head] beeps: 'Capacitors have been recharged.'"))
+
+//Khambataar populist fighters armor
+/obj/item/clothing/suit/storage/vest/merc/rebel1
+	name = "Heavy Populist Combat Coat"
+	desc = "A high-quality armored snowcoat made by the best Populist Armorers,Uses a set of Heavy Ballistic Plates for extra protection against any kind of threat towards the populist fighters and includes pouches to carry extra supplies."
+	icon_state = "rebel_heavy"
+	item_state = "rebel_heavy"
+	max_upgrades = 0 //No upgrading this one
+	tool_qualities = list()
+	price_tag = 3500//worth capturing it
+	armor_list = list(
+		melee = 45,
+		bullet = 45,
+		energy = 45,
+		bomb = 45,
+		bio = 0,
+		rad = 0
+	)
+	body_parts_covered = UPPER_TORSO|LEGS|ARMS|LOWER_TORSO
+	cold_protection = UPPER_TORSO|LEGS|ARMS|LOWER_TORSO
+	slowdown = 1.0
+
+/obj/item/clothing/suit/storage/vest/merc/rebel2
+	name = "Populist Combat Coat"
+	desc = "An armored snowcoat made by the best Populist Armorers,Uses a set of Heavy Ballistic Plates for extra protection against any kind of threat towards the populist fighters and includes pouches to carry extra supplies."
+	icon_state = "rebel_light"
+	item_state = "rebel_light"
+	max_upgrades = 0 //No upgrading this one
+	tool_qualities = list()
+	price_tag = 2000//worth capturing it
+	armor_list = list(
+		melee = 35,
+		bullet = 40,
+		energy = 40,
+		bomb = 35,
+		bio = 0,
+		rad = 0
+	)
+	body_parts_covered = UPPER_TORSO|LEGS|ARMS|LOWER_TORSO
+	cold_protection = UPPER_TORSO|LEGS|ARMS|LOWER_TORSO
+	slowdown = 0.5
