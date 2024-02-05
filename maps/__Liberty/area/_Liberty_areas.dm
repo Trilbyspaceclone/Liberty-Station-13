@@ -491,6 +491,48 @@
 	name = "Hunting Plains River"
 	icon_state = "hammerblue"
 
+/area/liberty/outside/forest/hill_forest
+	name = "Snow Hills"
+	icon_state = "erisblue"
+	sound_env = FOREST
+	allows_weather_of_snow = TRUE
+	ambience = list('sound/ambience/winterwind.ogg')
+
+/area/liberty/outside/forest/crashed_spaceloot
+	name = "Space Crash"
+	icon_state = "erisred"
+	sound_env = FOREST
+	allows_weather_of_snow = TRUE
+	ambience = list('sound/ambience/winterwind.ogg')
+
+/area/liberty/outside/forest/abbandoned_caverns
+	name = "Unknown Caverns"
+	icon_state = "erisyellow"
+	sound_env = FOREST
+	allows_weather_of_snow = TRUE
+	ambience = list('sound/ambience/winterwind.ogg')
+
+/area/liberty/outside/forest/dangerous_forest
+	name = "Dangerous Forest"
+	icon_state = "erisgreen"
+	sound_env = FOREST
+	allows_weather_of_snow = TRUE
+	ambience = list('sound/ambience/winterwind.ogg')
+
+/area/liberty/outside/forest/occupied_camp
+	name = "Unknown Camp"
+	icon_state = "erisred"
+	sound_env = FOREST
+	allows_weather_of_snow = TRUE
+	ambience = list('sound/ambience/winterwind.ogg')
+
+/area/liberty/outside/forest/Hills_Dark
+	name = "Dark Caves"
+	icon_state = "erisyellow"
+	sound_env = FOREST
+	allows_weather_of_snow = TRUE
+	ambience = list('sound/ambience/winterwind.ogg')
+
 /area/liberty/outside/forest/river_forest_cabin
 	name = "Hunting Plains Cabin"
 	icon_state = "erisgreen"
