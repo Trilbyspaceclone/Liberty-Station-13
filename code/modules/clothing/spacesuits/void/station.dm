@@ -834,7 +834,7 @@
 	helmet = /obj/item/clothing/head/helmet/space/void/union/heavy
 	stiffness = LIGHT_STIFFNESS
 
-/obj/item/clothing/suit/space/void/union/heavy/verb/toggle_style()
+/obj/item/clothing/suit/space/void/union/heavy/toggle_style()
 	set name = "Adjust Armored Plates"
 	set category = "Object"
 	set src in usr
@@ -890,7 +890,7 @@ obj/item/clothing/suit/space/void/union/heavy/steelweave
 	light_overlay = "hardhatunion_light"
 	obscuration = LIGHT_OBSCURATION
 
-/obj/item/clothing/head/helmet/space/void/union/heavy/verb/toggle_style()
+/obj/item/clothing/head/helmet/space/void/union/heavy/toggle_style()
 	set name = "Adjust Armored Plates"
 	set category = "Object"
 	set src in usr
@@ -937,7 +937,7 @@ obj/item/clothing/suit/space/void/union/heavy/steelweave
 	helmet = /obj/item/clothing/head/helmet/space/void/union/tminer_helmet
 	stiffness = LIGHT_STIFFNESS
 
-/obj/item/clothing/suit/space/void/union/tminer_suit/verb/toggle_style()
+/obj/item/clothing/suit/space/void/union/tminer_suit/toggle_style()
 	set name = "Adjust Armored Plates"
 	set category = "Object"
 	set src in usr
@@ -1010,7 +1010,7 @@ obj/item/clothing/suit/space/void/union/heavy/steelweave
 	helmet = /obj/item/clothing/head/helmet/space/void/union/heavy_tminer_helmet
 	stiffness = LIGHT_STIFFNESS
 
-/obj/item/clothing/suit/space/void/union/heavy_tminer_suit/verb/toggle_style()
+/obj/item/clothing/suit/space/void/union/heavy_tminer_suit/toggle_style()
 	set name = "Adjust Armored Plates"
 	set category = "Object"
 	set src in usr
@@ -1059,7 +1059,7 @@ obj/item/clothing/suit/space/void/union/heavy/steelweave
 	light_overlay = "hardhatunion_light"
 	obscuration = LIGHT_OBSCURATION
 
-/obj/item/clothing/head/helmet/space/void/union/heavy_tminer_helmet/verb/toggle_style()
+/obj/item/clothing/head/helmet/space/void/union/heavy_tminer_helmet/toggle_style()
 	set name = "Adjust Armored Plates"
 	set category = "Object"
 	set src in usr
@@ -1106,7 +1106,7 @@ obj/item/clothing/suit/space/void/union/heavy/steelweave
 	helmet = /obj/item/clothing/head/helmet/space/void/union/chief_helmet
 	stiffness = LIGHT_STIFFNESS
 
-/obj/item/clothing/suit/space/void/union/chief_suit/verb/toggle_style()
+/obj/item/clothing/suit/space/void/union/chief_suit/toggle_style()
 	set name = "Adjust Armored Plates"
 	set category = "Object"
 	set src in usr
@@ -1161,7 +1161,7 @@ obj/item/clothing/suit/space/void/union/heavy/steelweave
 	light_overlay = "hardhatunion_light"
 	obscuration = LIGHT_OBSCURATION
 
-/obj/item/clothing/head/helmet/space/void/union/chief_helmet/verb/toggle_style()
+/obj/item/clothing/head/helmet/space/void/union/chief_helmet/toggle_style()
 	set name = "Adjust Armored Plates"
 	set category = "Object"
 	set src in usr
@@ -1208,7 +1208,7 @@ obj/item/clothing/suit/space/void/union/heavy/steelweave
 	helmet = /obj/item/clothing/head/helmet/space/void/union/heavy/chief_helmet
 	stiffness = LIGHT_STIFFNESS
 
-/obj/item/clothing/suit/space/void/union/heavy/chief/verb/toggle_style()
+/obj/item/clothing/suit/space/void/union/heavy/chief/toggle_style()
 	set name = "Adjust Armored Plates"
 	set category = "Object"
 	set src in usr
@@ -1263,7 +1263,7 @@ obj/item/clothing/suit/space/void/union/heavy/steelweave
 	)
 
 
-/obj/item/clothing/head/helmet/space/void/union/heavy/chief_helmet/verb/toggle_style()
+/obj/item/clothing/head/helmet/space/void/union/heavy/chief_helmet/toggle_style()
 	set name = "Adjust Armored Plates"
 	set category = "Object"
 	set src in usr
