@@ -341,8 +341,8 @@
 /obj/item/clothing/suit/space/void/federalistG
 	name = "Terran Federation Surplus Combat Voidsuit"
 	desc = "An Antique Design of Combat Voidsuit used by the Terran Federation Troopers Decades ago, it didn't saw wars but was used on colonization and defense missions on the Galaxy Frontiers, it has extra layers of armor against stabs, claws and acid? this armor set seems to have been unpainted so is hard to see if is an Official Federation Armor or a Copy, despite that the armor is a Well manufactured Combat protection that makes very hard see the lost of a Limb or a Proyectile getting Through the Armor..."
-	icon_state = "grayarmor"
-	item_state = "grayarmor"
+	icon_state = "greyarmor"
+	item_state = "greyarmor"
 	slowdown = 1
 	armor_list = list(
 		melee = 55,
@@ -732,6 +732,34 @@
 	helmet = /obj/item/clothing/head/helmet/space/void/union
 	stiffness = LIGHT_STIFFNESS
 
+/obj/item/clothing/suit/space/void/union/verb/toggle_style()
+	set name = "Adjust Armored Plates"
+	set category = "Object"
+	set src in usr
+
+	if(!isliving(loc))
+		return
+
+	var/mob/M = usr
+	var/list/options = list()
+	options["Standard Design"] = "engineer_suit"
+	options["steelweave armor"] = "engineer_suit_steelweave"
+
+	var/choice = input(M,"What kind of style do you want?","Adjust Style") as null|anything in options
+
+	if(src && choice && !M.incapacitated() && Adjacent(M))
+		icon_state = options[choice]
+		to_chat(M, "You adjusted your Voidsuit style into [choice] mode.")
+		update_icon()
+		update_wear_icon()
+		usr.update_action_buttons()
+		return 1
+
+/obj/item/clothing/suit/space/void/union/steelweave
+	name = "Terra Engineer Steelweave Protection Suit"
+	desc = "A Special Protection suit designed by Terra-Therma Worker Union, this is an Comfortable and Robust Engineering model designed to even be space proof while keeps his lightweight, this version sports the Armor Plates Unpainted."
+	icon_state = "engineer_suit_steelweave"
+	item_state = "engineer_suit_steelweave"
 
 /obj/item/clothing/head/helmet/space/void/union
 	name = "Terra Engineer Protection Helmet"
@@ -759,6 +787,35 @@
 	light_overlay = "hardhatunion_light"
 	obscuration = LIGHT_OBSCURATION
 
+/obj/item/clothing/head/helmet/space/void/union/verb/toggle_style()
+	set name = "Adjust Armored Plates"
+	set category = "Object"
+	set src in usr
+
+	if(!isliving(loc))
+		return
+
+	var/mob/M = usr
+	var/list/options = list()
+	options["Standard Design"] = "engineer_helmet"
+	options["Steelweave armored helmet"] = "engineer_helmet_steelweave"
+
+	var/choice = input(M,"What kind of style do you want?","Adjust Style") as null|anything in options
+
+	if(src && choice && !M.incapacitated() && Adjacent(M))
+		icon_state = options[choice]
+		to_chat(M, "You adjusted your Voidsuit Helmet style into [choice] mode.")
+		update_icon()
+		update_wear_icon()
+		usr.update_action_buttons()
+		return 1
+
+/obj/item/clothing/head/helmet/space/void/union/steelweave
+	name = "Terra Engineer Steelweave Protection Helmet"
+	desc = "A special Robust helmet designed by Terra-Therma Worker Union, passed all the safety tests and even has a big flashlight, this version sports an reinforced face protector that convinces the people to don't get too close from the resources and products without pay first."
+	icon_state = "engineer_helmet_steelweave"
+	item_state = "engineer_helmet_steelweave"
+
 /obj/item/clothing/suit/space/void/union/heavy
 	name = "Terra Engineer Heavy Protection Suit"
 	desc = "A Special Protection suit designed by Terra-Therma Worker Union, this is an Comfortable and Robust Engineering model designed to even be space proof while keeps his lightweight, this model seems to have been modified to protect the whole body with more success, keep in mind that stills being an work suit and not a combat armor."
@@ -777,6 +834,34 @@
 	helmet = /obj/item/clothing/head/helmet/space/void/union/heavy
 	stiffness = LIGHT_STIFFNESS
 
+/obj/item/clothing/suit/space/void/union/heavy/verb/toggle_style()
+	set name = "Adjust Armored Plates"
+	set category = "Object"
+	set src in usr
+
+	if(!isliving(loc))
+		return
+
+	var/mob/M = usr
+	var/list/options = list()
+	options["Standard Design"] = "engineer_heavy_suit"
+	options["steelweave armor"] = "engineer_heavy_suit_steelweave"
+
+	var/choice = input(M,"What kind of style do you want?","Adjust Style") as null|anything in options
+
+	if(src && choice && !M.incapacitated() && Adjacent(M))
+		icon_state = options[choice]
+		to_chat(M, "You adjusted your Voidsuit style into [choice] mode.")
+		update_icon()
+		update_wear_icon()
+		usr.update_action_buttons()
+		return 1
+
+obj/item/clothing/suit/space/void/union/heavy/steelweave
+	name = "Terra Engineer Steelweave Heavy Protection Suit"
+	desc = "A Special Protection suit designed by Terra-Therma Worker Union, this is an Comfortable and Robust Engineering model designed to even be space proof while keeps his lightweight, this model seems to have been modified to protect the whole body with more success, keep in mind that stills being an work suit and not a combat armor, somewhat this looks more intimidating to keep the population away from the products they didn't paid."
+	icon_state = "engineer_heavy_suit_steelweave"
+	item_state = "engineer_heavy_suit_steelweave"
 
 /obj/item/clothing/head/helmet/space/void/union/heavy
 	name = "Terra Engineer Heavy Protection Helmet"
@@ -805,16 +890,45 @@
 	light_overlay = "hardhatunion_light"
 	obscuration = LIGHT_OBSCURATION
 
+/obj/item/clothing/head/helmet/space/void/union/heavy/verb/toggle_style()
+	set name = "Adjust Armored Plates"
+	set category = "Object"
+	set src in usr
+
+	if(!isliving(loc))
+		return
+
+	var/mob/M = usr
+	var/list/options = list()
+	options["Standard heavy helmet Design"] = "heavy_engineer_helmet"
+	options["Steelweave armored heavy helmet"] = "heavy_engineer_helmet_steelweave"
+
+	var/choice = input(M,"What kind of style do you want?","Adjust Style") as null|anything in options
+
+	if(src && choice && !M.incapacitated() && Adjacent(M))
+		icon_state = options[choice]
+		to_chat(M, "You adjusted your Voidsuit Helmet style into [choice] mode.")
+		update_icon()
+		update_wear_icon()
+		usr.update_action_buttons()
+		return 1
+
+/obj/item/clothing/head/helmet/space/void/union/heavy/steelweave
+	name = "Terra Engineer Steelweave Heavy Protection Helmet"
+	desc = "A special Robust helmet designed by Terra-Therma Worker Union, passed all the safety tests and even has a big flashlight, this model seems to have been higly modified with extra layers of armor to have more chances at keep the brain inside while intimidates the normal population and potential thieves away from the Worker Union Storages."
+	icon_state = "heavy_engineer_helmet_steelweave"
+	item_state = "heavy_engineer_helmet_steelweave"
+
 /obj/item/clothing/suit/space/void/union/tminer_suit
 	name = "Terra Miner Protection Suit"
 	desc = "A Special Protection suit designed by Terra-Therma Worker Union, this is an Comfortable and Robust Mining model designed to even be space proof while keeps his lightweight."
 	icon_state = "tminer_suit"
 	item_state = "tminer_suit"
-	slowdown = 0.3
+	slowdown = 0.2
 	armor_list = list(
-		melee = 50,
-		bullet = 20,
-		energy = 20,
+		melee = 30,
+		bullet = 30,
+		energy = 30,
 		bomb = 40,
 		bio = 100,
 		rad = 100
@@ -823,6 +937,34 @@
 	helmet = /obj/item/clothing/head/helmet/space/void/union/tminer_helmet
 	stiffness = LIGHT_STIFFNESS
 
+/obj/item/clothing/suit/space/void/union/tminer_suit/verb/toggle_style()
+	set name = "Adjust Armored Plates"
+	set category = "Object"
+	set src in usr
+
+	if(!isliving(loc))
+		return
+
+	var/mob/M = usr
+	var/list/options = list()
+	options["Standard miner Design"] = "tminer_suit"
+	options["Steelweave miner armor"] = "tminer_suit_steelweave"
+
+	var/choice = input(M,"What kind of style do you want?","Adjust Style") as null|anything in options
+
+	if(src && choice && !M.incapacitated() && Adjacent(M))
+		icon_state = options[choice]
+		to_chat(M, "You adjusted your Voidsuit armor style into [choice] mode.")
+		update_icon()
+		update_wear_icon()
+		usr.update_action_buttons()
+		return 1
+
+/obj/item/clothing/suit/space/void/union/tminer_suit/steelweave
+	name = "Terra Miner Steelweave Protection Suit"
+	desc = "A Special Protection suit designed by Terra-Therma Worker Union, this is an Comfortable and Robust Mining model designed to even be space proof while keeps his lightweight, this armor version keeps some unpainted plates over the armor."
+	icon_state = "tminer_suit_steelweave"
+	item_state = "tminer_suit_steelweave"
 
 /obj/item/clothing/head/helmet/space/void/union/tminer_helmet
 	name = "Terra Engineer Protection Helmet"
@@ -839,9 +981,9 @@
 		slot_r_hand_str = "engineer_helmet",
 		)
 	armor_list = list(
-		melee = 50,
-		bullet = 20,
-		energy = 20,
+		melee = 30,
+		bullet = 30,
+		energy = 30,
 		bomb = 40,
 		bio = 100,
 		rad = 100
@@ -857,7 +999,7 @@
 	item_state = "heavy_tminer_suit"
 	slowdown = 0.5
 	armor_list = list(
-		melee = 60,
+		melee = 45,
 		bullet = 35,
 		energy = 35,
 		bomb = 60,
@@ -868,6 +1010,28 @@
 	helmet = /obj/item/clothing/head/helmet/space/void/union/heavy_tminer_helmet
 	stiffness = LIGHT_STIFFNESS
 
+/obj/item/clothing/suit/space/void/union/heavy_tminer_suit/verb/toggle_style()
+	set name = "Adjust Armored Plates"
+	set category = "Object"
+	set src in usr
+
+	if(!isliving(loc))
+		return
+
+	var/mob/M = usr
+	var/list/options = list()
+	options["Standard Design"] = "heavy_tminer_suit"
+	options["Steelweave armor"] = "heavy_tminer_suit_steelweave"
+
+	var/choice = input(M,"What kind of style do you want?","Adjust Style") as null|anything in options
+
+	if(src && choice && !M.incapacitated() && Adjacent(M))
+		icon_state = options[choice]
+		to_chat(M, "You adjusted your Voidsuit armor style into [choice] mode.")
+		update_icon()
+		update_wear_icon()
+		usr.update_action_buttons()
+		return 1
 
 /obj/item/clothing/head/helmet/space/void/union/heavy_tminer_helmet
 	name = "Terra Miner Heavy Protection Helmet"
@@ -884,7 +1048,7 @@
 		slot_r_hand_str = "engineer_helmet",
 		)
 	armor_list = list(
-		melee = 60,
+		melee = 45,
 		bullet = 35,
 		energy = 35,
 		bomb = 60,
@@ -895,12 +1059,41 @@
 	light_overlay = "hardhatunion_light"
 	obscuration = LIGHT_OBSCURATION
 
+/obj/item/clothing/head/helmet/space/void/union/heavy_tminer_helmet/verb/toggle_style()
+	set name = "Adjust Armored Plates"
+	set category = "Object"
+	set src in usr
+
+	if(!isliving(loc))
+		return
+
+	var/mob/M = usr
+	var/list/options = list()
+	options["Standard heavy helmet Design"] = "heavy_tminer_helmet"
+	options["Steelweave armored heavy helmet"] = "Heavy_miner_helmet_steelweave"
+
+	var/choice = input(M,"What kind of style do you want?","Adjust Style") as null|anything in options
+
+	if(src && choice && !M.incapacitated() && Adjacent(M))
+		icon_state = options[choice]
+		to_chat(M, "You adjusted your Voidsuit Helmet style into [choice] mode.")
+		update_icon()
+		update_wear_icon()
+		usr.update_action_buttons()
+		return 1
+
+/obj/item/clothing/head/helmet/space/void/union/heavy_tminer_helmet/steelweave
+	name = "Terra Miner Steelweave heavy Miner Helmet"
+	desc = "A special Robust helmet designed by Terra-Therma Worker Union, passed all the safety tests and even has a big flashlight, this Mining model seems to have been higly modified with extra layers of armor to have more chances at keep the brain inside while this model looks more menacing."
+	icon_state = "Heavy_miner_helmet_steelweave"
+	item_state = "Heavy_miner_helmet_steelweave"
+
 /obj/item/clothing/suit/space/void/union/chief_suit
 	name = "Terra Chief Protection Suit"
 	desc = "A Special Protection suit designed by Terra-Therma Worker Worker Union, this is an Comfortable and Robust Engineering model Painted in different colour to distinguish that the chief of the union is inside of it, its designed to be space proof while keeps his lightweight."
 	icon_state = "chief_suit"
 	item_state = "chief_suit"
-	slowdown = 0.1
+	slowdown = 0.2
 	armor_list = list(
 		melee = 30,
 		bullet = 30,
@@ -913,6 +1106,34 @@
 	helmet = /obj/item/clothing/head/helmet/space/void/union/chief_helmet
 	stiffness = LIGHT_STIFFNESS
 
+/obj/item/clothing/suit/space/void/union/chief_suit/verb/toggle_style()
+	set name = "Adjust Armored Plates"
+	set category = "Object"
+	set src in usr
+
+	if(!isliving(loc))
+		return
+
+	var/mob/M = usr
+	var/list/options = list()
+	options["Standard Design"] = "chief_suit"
+	options["Steelweave armored helmet"] = "chief_suit_steelweave"
+
+	var/choice = input(M,"What kind of style do you want?","Adjust Style") as null|anything in options
+
+	if(src && choice && !M.incapacitated() && Adjacent(M))
+		icon_state = options[choice]
+		to_chat(M, "You adjusted your Voidsuit Helmet style into [choice] mode.")
+		update_icon()
+		update_wear_icon()
+		usr.update_action_buttons()
+		return 1
+
+/obj/item/clothing/suit/space/void/union/chief_suit/steelweave
+	name = "Terra Chief Steelweave Protection Suit"
+	desc = "A Special Protection suit designed by Terra-Therma Worker Worker Union, this is an Comfortable and Robust Engineering model Painted in different colour to distinguish that the chief of the union is inside of it, its designed to be space proof while keeps his lightweight while has unpainted armor plates."
+	icon_state = "chief_suit_steelweave"
+	item_state = "chief_suit_steelweave"
 
 /obj/item/clothing/head/helmet/space/void/union/chief_helmet
 	name = "Terra Chief Protection Helmet"
@@ -940,12 +1161,41 @@
 	light_overlay = "hardhatunion_light"
 	obscuration = LIGHT_OBSCURATION
 
+/obj/item/clothing/head/helmet/space/void/union/chief_helmet/verb/toggle_style()
+	set name = "Adjust Armored Plates"
+	set category = "Object"
+	set src in usr
+
+	if(!isliving(loc))
+		return
+
+	var/mob/M = usr
+	var/list/options = list()
+	options["Standard heavy helmet Design"] = "chief_helmet"
+	options["Steelweave armored heavy helmet"] = "chief_helmet_steelweave"
+
+	var/choice = input(M,"What kind of style do you want?","Adjust Style") as null|anything in options
+
+	if(src && choice && !M.incapacitated() && Adjacent(M))
+		icon_state = options[choice]
+		to_chat(M, "You adjusted your Voidsuit Helmet style into [choice] mode.")
+		update_icon()
+		update_wear_icon()
+		usr.update_action_buttons()
+		return 1
+
+/obj/item/clothing/head/helmet/space/void/union/chief_helmet/steelweave
+	name = "Terra Chief Steelweave Protection Helmet"
+	desc = "A special Robust helmet designed by Terra-Therma Worker Union, passed all the safety tests and even has a big flashlight, this model has been painted in the colours of the chief to show who is in charge of the protection of the colony and the union workers, this helmet sports an intimidating face shield."
+	icon_state = "chief_helmet_steelweave"
+	item_state = "chief_helmet_steelweave"
+
 /obj/item/clothing/suit/space/void/union/heavy/chief
 	name = "Terra Chief Heavy Protection Suit"
 	desc = "A Special Protection suit designed by Terra-Therma Worker Union, this is an Comfortable and Robust Engineering model Painted in different colour to distinguish that the chief of the union is inside of it, its designed to be space proof while keeps his lightweight, this model seems to have been modified to protect the whole body with more success, keep in mind that stills being an work suit and not a combat armor."
 	icon_state = "heavy_chief_suit"
 	item_state = "heavy_chief_suit"
-	slowdown = 0.2
+	slowdown = 0.3
 	armor_list = list(
 		melee = 45,
 		bullet = 35,
@@ -957,6 +1207,37 @@
 	max_heat_protection_temperature = FIRESUIT_MAX_HEAT_PROTECTION_TEMPERATURE
 	helmet = /obj/item/clothing/head/helmet/space/void/union/heavy/chief_helmet
 	stiffness = LIGHT_STIFFNESS
+
+/obj/item/clothing/suit/space/void/union/heavy/chief/verb/toggle_style()
+	set name = "Adjust Armored Plates"
+	set category = "Object"
+	set src in usr
+
+	if(!isliving(loc))
+		return
+
+	var/mob/M = usr
+	var/list/options = list()
+	options["Standard Design"] = "heavy_chief_suit"
+	options["Steelweave armored helmet"] = "heavy_chief_suit_steelweave"
+
+	var/choice = input(M,"What kind of style do you want?","Adjust Style") as null|anything in options
+
+	if(src && choice && !M.incapacitated() && Adjacent(M))
+		icon_state = options[choice]
+		to_chat(M, "You adjusted your Voidsuit Helmet style into [choice] mode.")
+		update_icon()
+		update_wear_icon()
+		usr.update_action_buttons()
+		return 1
+
+
+/obj/item/clothing/suit/space/void/union/heavy/chief/steelweave
+	name = "Terra Chief Steelweave Protection Suit"
+	desc = "A Special Protection suit designed by Terra-Therma Worker Worker Union, this is an Comfortable and Robust Engineering model Painted in different colour to distinguish that the chief of the union is inside of it, its designed to be space proof while keeps his lightweight while has unpainted armor plates."
+	icon_state = "heavy_chief_suit_steelweave"
+	item_state = "heavy_chief_suit_steelweave"
+
 
 /obj/item/clothing/head/helmet/space/void/union/heavy/chief_helmet
 	name = "Terra Chief Heavy Protection Helmet"
@@ -980,3 +1261,33 @@
 		bio = 100,
 		rad = 100
 	)
+
+
+/obj/item/clothing/head/helmet/space/void/union/heavy/chief_helmet/verb/toggle_style()
+	set name = "Adjust Armored Plates"
+	set category = "Object"
+	set src in usr
+
+	if(!isliving(loc))
+		return
+
+	var/mob/M = usr
+	var/list/options = list()
+	options["Standard Design"] = "heavy_chief_helmet"
+	options["Steelweave armored helmet"] = "heavy_chief_helmet_steelweave"
+
+	var/choice = input(M,"What kind of style do you want?","Adjust Style") as null|anything in options
+
+	if(src && choice && !M.incapacitated() && Adjacent(M))
+		icon_state = options[choice]
+		to_chat(M, "You adjusted your Voidsuit Helmet style into [choice] mode.")
+		update_icon()
+		update_wear_icon()
+		usr.update_action_buttons()
+		return 1
+
+/obj/item/clothing/head/helmet/space/void/union/heavy/chief_helmet/steelweave
+	name = "Terra Chief Heavy Steelweave Protection Helmet"
+	desc = "A special Robust helmet designed by Terra-Therma Worker Union, passed all the safety tests and even has a big flashlight, this model seems to have been higly modified with extra layers of armor to have more chances at keep the of the brain of the chief inside while looks more intimidating."
+	icon_state = "heavy_chief_helmet_steelweave"
+	item_state = "heavy_chief_helmet_steelweave"
