@@ -43,49 +43,6 @@
 	base_turf = /turf/simulated/floor/plating/under
 	flags = AREA_FLAG_RAD_SHIELDED
 
-//Sewer Maintenance areas
-
-/area/liberty/maintenance/undergroundsewersouth
-	name = "Sewer South Maintenance"
-	icon_state = "erisblue"
-	ambience = list('sound/ambience/maintambience.ogg')
-
-area/liberty/maintenance/undergroundsewernorth
-	name = "Sewer North Maintenance"
-	icon_state = "erisgreen"
-	ambience = list('sound/ambience/maintambience.ogg')
-
-/area/liberty/maintenance/undergroundsewerwest
-	name = "Sewer West Maintenance"
-	icon_state = "erisyellow"
-	ambience = list('sound/ambience/maintambience.ogg')
-
-/area/liberty/maintenance/undergroundsewereast
-	name = "Sewer East Maintenance"
-	icon_state = "erisgreen"
-	ambience = list('sound/ambience/maintambience.ogg')
-
-/area/liberty/maintenance/undergroundfsewerplague
-	name = "Plagued Factory"
-	icon_state = "erisyellow"
-	ambience = list('sound/ambience/maintambience.ogg')
-
-/area/liberty/maintenance/undergroundsewerentral
-	name = "Sewer Central Maintenance"
-	icon_state = "erisblue"
-	ambience = list('sound/ambience/maintambience.ogg')
-
-/area/liberty/maintenance/terrasewers
-	name = "Terra Therma Worker Union Sewers"
-	icon_state = "erisyellow"
-	requires_power = FALSE // underfloor cable from lowar colony
-	ambience = list('sound/ambience/maintambience.ogg')
-
-/area/liberty/maintenance/sewercaverns
-	name = "Sewer Cave System"
-	icon_state = "erisred"
-	forced_ambience = list('sound/ambience/occ_scaryambie.ogg') // Deep maint entrance spoilers.
-
 //Maintenance
 
 /area/liberty/maintenance
