@@ -1626,6 +1626,10 @@
 /obj/structure/scrap/cloth,
 /turf/simulated/floor/rock/dark,
 /area/liberty/dungeon/outside/frozen_forest_caves)
+"Fn" = (
+/obj/item/remains/human5,
+/turf/simulated/floor/snow,
+/area/liberty/dungeon/outside/frozen_forest)
 "Fu" = (
 /turf/simulated/floor/rock/dark,
 /area/liberty/dungeon/outside/frozen_forest_caves)
@@ -60304,7 +60308,7 @@ rf
 HG
 rf
 jJ
-rf
+Fn
 tJ
 rf
 rf
