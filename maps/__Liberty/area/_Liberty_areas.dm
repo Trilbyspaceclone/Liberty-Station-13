@@ -50,7 +50,7 @@
 	icon_state = "erisblue"
 	ambience = list('sound/ambience/maintambience.ogg')
 
-area/liberty/maintenance/undergroundsewernorth
+/area/liberty/maintenance/undergroundsewernorth
 	name = "Sewer North Maintenance"
 	icon_state = "erisgreen"
 	ambience = list('sound/ambience/maintambience.ogg')
