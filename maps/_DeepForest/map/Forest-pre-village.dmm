@@ -815,8 +815,7 @@
 /obj/effect/step_trigger/swampcaves_to_riverforest_1_A{
 	name = "fss_to_fpv_2_A";
 	id = "fss_to_fpv_2_A";
-	id_target = "fss_to_fpv_1_A";
-	in_use = s
+	id_target = "fss_to_fpv_1_A"
 	},
 /turf/simulated/floor/snow,
 /area/colony)
