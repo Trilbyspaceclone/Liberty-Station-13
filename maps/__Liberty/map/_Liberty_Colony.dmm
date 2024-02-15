@@ -63355,12 +63355,6 @@
 	},
 /turf/simulated/floor/reinforced,
 /area/shuttle/vasiliy_shuttle_area)
-"maR" = (
-/obj/structure/table/steel_reinforced,
-/obj/effect/decal/cleanable/dirt,
-/obj/item/storage/deferred/roacheggs,
-/turf/simulated/floor/tiled/dark/techfloor_grid,
-/area/liberty/maintenance/undergroundsewernorth)
 "maS" = (
 /obj/machinery/alarm{
 	pixel_y = 32
@@ -141834,7 +141828,7 @@ fhE
 fhE
 fhE
 fhE
-daZ
+aDx
 aDx
 aDx
 xVU
@@ -142036,7 +142030,7 @@ fhE
 fhE
 fhE
 fhE
-daZ
+aDx
 aDx
 oHt
 lFn
@@ -142238,7 +142232,7 @@ fhE
 fhE
 fhE
 fhE
-daZ
+aDx
 oGM
 cvH
 lFn
@@ -142440,7 +142434,7 @@ fhE
 fhE
 fhE
 fhE
-daZ
+aDx
 oGM
 lFn
 lFn
@@ -142642,7 +142636,7 @@ fhE
 fhE
 fhE
 fhE
-daZ
+aDx
 aDx
 cvH
 lFn
@@ -142844,7 +142838,7 @@ fhE
 fhE
 fhE
 fhE
-daZ
+aDx
 jRb
 lFn
 mid
@@ -143046,7 +143040,7 @@ fhE
 fhE
 fhE
 fhE
-daZ
+aDx
 jRb
 lFn
 mid
@@ -143248,10 +143242,10 @@ fhE
 fhE
 fhE
 fhE
-daZ
+aDx
 jRb
 lFn
-maR
+mid
 aDx
 lFn
 lFn
@@ -143450,7 +143444,7 @@ fhE
 fhE
 fhE
 fhE
-daZ
+aDx
 jRb
 lFn
 ihy
@@ -143652,7 +143646,7 @@ fhE
 fhE
 fhE
 fhE
-daZ
+aDx
 lFn
 lFn
 lFn
@@ -143854,7 +143848,7 @@ fhE
 fhE
 fhE
 fhE
-daZ
+aDx
 lFn
 lFn
 lFn
@@ -144056,7 +144050,7 @@ fhE
 fhE
 fhE
 fhE
-daZ
+aDx
 lFn
 lFn
 lFn
@@ -144258,7 +144252,7 @@ fhE
 fhE
 fhE
 fhE
-daZ
+aDx
 aDx
 aDx
 aDx
@@ -144460,7 +144454,7 @@ fhE
 fhE
 fhE
 fhE
-daZ
+aDx
 adr
 lFn
 lFn
@@ -144662,7 +144656,7 @@ fhE
 fhE
 fhE
 fhE
-daZ
+aDx
 vUU
 iDJ
 rur
@@ -144864,7 +144858,7 @@ fhE
 fhE
 fhE
 fhE
-daZ
+aDx
 aDx
 aDx
 xVU
