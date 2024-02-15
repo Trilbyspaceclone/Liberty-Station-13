@@ -52,6 +52,11 @@
 /obj/structure/flora/small/trailrockb2,
 /turf/simulated/floor/rock/grey,
 /area/liberty/outside/forest/occupied_camp)
+"aG" = (
+/obj/structure/flora/tree/snow/two,
+/obj/structure/invislight,
+/turf/simulated/floor/snow,
+/area/liberty/outside/forest/dangerous_forest)
 "aI" = (
 /obj/item/material/shard,
 /obj/effect/decal/cleanable/dirt,
@@ -469,6 +474,10 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/wood_old,
 /area/liberty/outside/forest/occupied_camp)
+"jQ" = (
+/obj/structure/invislight,
+/turf/simulated/floor/rock,
+/area/liberty/outside/forest/dangerous_forest)
 "kE" = (
 /obj/effect/decal/cleanable/blood{
 	blood_color = "#A10808";
@@ -897,6 +906,10 @@
 /obj/structure/flora/snowbush,
 /turf/simulated/floor/snow,
 /area/liberty/outside/forest/dangerous_forest)
+"rZ" = (
+/obj/map_data/frozen_pre_village,
+/turf/unsimulated/mineral,
+/area/colony)
 "sh" = (
 /obj/item/trash/mre/alt,
 /turf/simulated/floor/industrial/sierra,
@@ -1738,6 +1751,10 @@
 	},
 /turf/simulated/floor/wood_old,
 /area/liberty/outside/forest/occupied_camp)
+"FL" = (
+/obj/structure/invislightsmall/outside,
+/turf/simulated/floor/snow,
+/area/liberty/outside/forest/dangerous_forest)
 "Gb" = (
 /obj/effect/decal/cleanable/blood{
 	blood_color = "#A10808";
@@ -1838,6 +1855,10 @@
 /obj/effect/decal/cleanable/rubble,
 /turf/simulated/wall/rust_reinforced,
 /area/liberty/outside/forest/Hills_Dark)
+"Hb" = (
+/obj/structure/invislightsmall/outside,
+/turf/simulated/floor/rock,
+/area/liberty/outside/forest/dangerous_forest)
 "Hy" = (
 /obj/machinery/microwave/burnbarrel,
 /turf/simulated/floor/industrial/black_large_slates,
@@ -1952,6 +1973,11 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/wood_old,
 /area/liberty/outside/forest/occupied_camp)
+"IS" = (
+/obj/structure/flora/small/snow/rock7,
+/obj/structure/invislight,
+/turf/simulated/floor/snow,
+/area/liberty/outside/forest/dangerous_forest)
 "Ja" = (
 /obj/structure/flora/snowgrass/rockandgrass,
 /turf/simulated/floor/beach/water/ice,
@@ -2022,6 +2048,16 @@
 	},
 /turf/simulated/floor/industrial/ornate,
 /area/liberty/outside/forest/Hills_Dark)
+"Kl" = (
+/obj/structure/flora/tree/snow/snow,
+/obj/structure/invislight,
+/turf/simulated/floor/snow,
+/area/liberty/outside/forest/dangerous_forest)
+"Kx" = (
+/obj/structure/flora/snowgrass/grass,
+/obj/structure/invislight,
+/turf/simulated/floor/snow,
+/area/liberty/outside/forest/dangerous_forest)
 "KB" = (
 /obj/item/clothing/head/welding,
 /obj/effect/decal/cleanable/dirt,
@@ -2080,6 +2116,10 @@
 	},
 /turf/simulated/floor/snow,
 /area/liberty/outside/forest/occupied_camp)
+"Lr" = (
+/obj/structure/invislight,
+/turf/simulated/floor/snow,
+/area/liberty/outside/forest/dangerous_forest)
 "Ly" = (
 /obj/effect/decal/cleanable/rubble,
 /turf/simulated/floor/rock,
@@ -3049,7 +3089,7 @@ Yo
 Yo
 Yo
 Yo
-Yo
+rZ
 "}
 (2,1,1) = {"
 Yo
@@ -5045,7 +5085,7 @@ vW
 vW
 vW
 vW
-vW
+FL
 fu
 fu
 fu
@@ -5247,7 +5287,7 @@ vW
 mQ
 vW
 vW
-HU
+Hb
 fu
 fu
 fu
@@ -5449,7 +5489,7 @@ Cx
 vW
 vW
 HU
-HU
+Hb
 fu
 fu
 fu
@@ -5651,7 +5691,7 @@ vW
 vW
 vW
 vW
-HU
+Hb
 fu
 fu
 fu
@@ -6663,7 +6703,7 @@ vW
 vW
 Cx
 vW
-vW
+Lr
 vW
 yC
 yC
@@ -9102,7 +9142,7 @@ vW
 vW
 ZC
 vW
-vW
+Lr
 ss
 ss
 Yo
@@ -29726,8 +29766,8 @@ ss
 ss
 yC
 vW
-vW
-Pe
+Lr
+aG
 vW
 gu
 vW
@@ -29929,7 +29969,7 @@ ss
 yC
 vW
 vW
-vW
+Lr
 vW
 vW
 vW
@@ -30132,9 +30172,9 @@ yC
 yC
 yC
 vW
-vW
-vW
-vW
+Lr
+Lr
+Lr
 vW
 vW
 vW
@@ -30343,8 +30383,8 @@ yC
 yC
 vW
 vW
-vW
-vW
+Lr
+Lr
 vW
 vW
 vW
@@ -30548,9 +30588,9 @@ yC
 vW
 vW
 vW
-vW
-mQ
-vW
+Lr
+Kx
+Lr
 vW
 vW
 vW
@@ -30752,16 +30792,16 @@ ss
 ss
 ss
 vW
-vW
-vW
-vW
-Pt
-vW
-vW
-Pe
-vW
-vW
-vW
+Lr
+Lr
+Lr
+IS
+Lr
+Lr
+aG
+Lr
+Lr
+Lr
 vW
 vW
 mQ
@@ -30978,7 +31018,7 @@ vW
 vW
 vW
 vW
-vW
+Lr
 vW
 Pe
 vW
@@ -31180,7 +31220,7 @@ vW
 Pt
 vW
 vW
-Pe
+aG
 vW
 vW
 vW
@@ -31372,7 +31412,7 @@ yC
 yC
 yC
 vW
-vW
+Lr
 vW
 Pe
 vW
@@ -31382,7 +31422,7 @@ vW
 vW
 mQ
 vW
-vW
+Lr
 gu
 Pt
 vW
@@ -31574,7 +31614,7 @@ ss
 ss
 ss
 vW
-vW
+Lr
 vW
 mQ
 vW
@@ -31585,7 +31625,7 @@ yC
 yC
 vW
 vW
-vW
+Lr
 vW
 vW
 mQ
@@ -31788,7 +31828,7 @@ yC
 yC
 vW
 vW
-vW
+Lr
 vW
 vW
 vW
@@ -31991,7 +32031,7 @@ HU
 HU
 HU
 vW
-vW
+Lr
 vW
 Pe
 vW
@@ -32789,7 +32829,7 @@ ss
 ss
 ss
 ss
-HU
+jQ
 HU
 zn
 HU
@@ -32802,7 +32842,7 @@ ss
 ss
 vW
 vW
-vW
+Lr
 vW
 vW
 vW
@@ -32993,7 +33033,7 @@ ss
 ss
 yC
 yC
-HU
+jQ
 pX
 HU
 HU
@@ -33004,8 +33044,8 @@ ss
 ss
 vW
 vW
-vW
-vW
+Lr
+Lr
 Pe
 vW
 mQ
@@ -33410,7 +33450,7 @@ ss
 ss
 vW
 vW
-vW
+Lr
 vW
 vW
 vW
@@ -33601,7 +33641,7 @@ ss
 ss
 yC
 yC
-HU
+jQ
 yC
 yC
 ss
@@ -33613,8 +33653,8 @@ ss
 ss
 vW
 vW
-Pt
-gu
+IS
+Kl
 vW
 vW
 vW
@@ -33816,7 +33856,7 @@ ss
 vW
 vW
 vW
-vW
+Lr
 vW
 vW
 vW
@@ -34429,7 +34469,7 @@ vW
 vW
 vW
 Pe
-vW
+Lr
 vW
 vW
 vW
@@ -34631,7 +34671,7 @@ yC
 yC
 vW
 vW
-vW
+Lr
 vW
 Pe
 vW
@@ -34833,7 +34873,7 @@ ss
 ss
 vW
 vW
-gu
+Kl
 vW
 vW
 mQ
@@ -35035,8 +35075,8 @@ ss
 ss
 ss
 vW
-vW
-vW
+Lr
+Lr
 vW
 vW
 vW
@@ -35238,7 +35278,7 @@ ss
 ss
 yC
 vW
-vW
+Lr
 vW
 vW
 Pe
@@ -35441,8 +35481,8 @@ ss
 ss
 vW
 vW
-vW
-vW
+Lr
+Lr
 vW
 gu
 vW
@@ -36057,8 +36097,8 @@ vW
 vW
 gu
 vW
-vW
-vW
+Lr
+Lr
 Pt
 vW
 gu
@@ -36260,9 +36300,9 @@ vW
 vW
 vW
 vW
-vW
-gu
-vW
+Lr
+Kl
+Lr
 vW
 Pe
 vW
@@ -36464,7 +36504,7 @@ vW
 vW
 vW
 vW
-vW
+Lr
 vW
 vW
 vW
@@ -36666,8 +36706,8 @@ yC
 vW
 vW
 vW
-vW
-mQ
+Lr
+Kx
 vW
 vW
 vW
@@ -36869,7 +36909,7 @@ yC
 vW
 vW
 vW
-vW
+Lr
 vW
 Fg
 vW
@@ -37072,7 +37112,7 @@ ss
 yC
 vW
 vW
-vW
+Lr
 vW
 vW
 vW
@@ -37275,7 +37315,7 @@ ss
 yC
 vW
 vW
-vW
+Lr
 vW
 vW
 Pe
@@ -37882,7 +37922,7 @@ bt
 bt
 bt
 vW
-vW
+Lr
 vW
 vW
 vW
@@ -38084,7 +38124,7 @@ bt
 bt
 bt
 bt
-vW
+Lr
 vW
 mQ
 vW
@@ -38286,7 +38326,7 @@ bt
 bt
 bt
 bt
-vW
+Lr
 vW
 vW
 Pt
@@ -38488,7 +38528,7 @@ bt
 bt
 bt
 bt
-vW
+Lr
 vW
 vW
 Cx
@@ -38892,7 +38932,7 @@ bt
 bt
 bt
 bt
-vW
+Lr
 vW
 RI
 vW
@@ -39094,7 +39134,7 @@ bt
 bt
 bt
 bt
-vW
+Lr
 vW
 mQ
 vW
@@ -39296,7 +39336,7 @@ bt
 bt
 bt
 bt
-vW
+Lr
 gu
 vW
 vW
@@ -39498,7 +39538,7 @@ bt
 bt
 bt
 bt
-vW
+Lr
 vW
 vW
 vW
@@ -39700,7 +39740,7 @@ bt
 bt
 bt
 bt
-vW
+Lr
 pF
 RI
 Pe
@@ -39902,7 +39942,7 @@ bt
 bt
 bt
 bt
-vW
+Lr
 vW
 vW
 Pt
@@ -40508,7 +40548,7 @@ zj
 zj
 zj
 zj
-vW
+Lr
 vW
 vW
 Pe
@@ -40710,7 +40750,7 @@ zj
 zj
 zj
 zj
-vW
+Lr
 vW
 vW
 vW
@@ -40912,7 +40952,7 @@ zj
 zj
 zj
 zj
-vW
+Lr
 vW
 vW
 vW
@@ -41114,7 +41154,7 @@ zj
 zj
 zj
 zj
-vW
+Lr
 vW
 vW
 Pe
@@ -41316,7 +41356,7 @@ bt
 bt
 zj
 bt
-vW
+Lr
 vW
 vW
 vW
