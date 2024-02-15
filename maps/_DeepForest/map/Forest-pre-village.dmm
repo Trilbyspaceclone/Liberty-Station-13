@@ -905,10 +905,6 @@
 /obj/structure/flora/snowbush,
 /turf/simulated/floor/snow,
 /area/liberty/outside/forest/dangerous_forest)
-"rZ" = (
-/obj/map_data/frozen_pre_village,
-/turf/unsimulated/mineral,
-/area/colony)
 "sh" = (
 /obj/item/trash/mre/alt,
 /turf/simulated/floor/industrial/sierra,
@@ -1997,6 +1993,10 @@
 /obj/random/cluster/roaches,
 /turf/simulated/floor/snow,
 /area/liberty/outside/forest/dangerous_forest)
+"Jp" = (
+/obj/map_data/frozen_pre_village,
+/turf/unsimulated/mineral,
+/area/colony)
 "Jq" = (
 /obj/effect/decal/cleanable/blood{
 	blood_color = "#A10808";
@@ -3088,7 +3088,7 @@ Yo
 Yo
 Yo
 Yo
-rZ
+Jp
 "}
 (2,1,1) = {"
 Yo
