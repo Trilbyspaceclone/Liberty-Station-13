@@ -183,10 +183,6 @@
 /obj/random/cloth/simulacrum_clothing,
 /turf/simulated/floor/rock,
 /area/liberty/outside/forest/hill_forest)
-"bN" = (
-/obj/map_data/frozen_space_scrap,
-/turf/unsimulated/mineral,
-/area/colony)
 "bR" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/cyan,
 /obj/effect/decal/cleanable/dirt,
@@ -774,6 +770,10 @@
 /obj/machinery/door/airlock/maintenance_interior,
 /turf/simulated/floor/plating/under,
 /area/liberty/outside/forest/crashed_spaceloot)
+"jD" = (
+/obj/map_data/frozen_space_scrap,
+/turf/unsimulated/mineral,
+/area/colony)
 "jF" = (
 /obj/machinery/atmospherics/pipe/simple/visible/yellow{
 	dir = 10
@@ -4808,7 +4808,7 @@ sf
 sf
 sf
 sf
-bN
+jD
 "}
 (2,1,1) = {"
 sf

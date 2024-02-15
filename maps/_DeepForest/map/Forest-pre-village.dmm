@@ -478,6 +478,10 @@
 /obj/structure/invislight,
 /turf/simulated/floor/rock,
 /area/liberty/outside/forest/dangerous_forest)
+"ku" = (
+/obj/map_data/frozen_pre_village,
+/turf/unsimulated/mineral,
+/area/colony)
 "kE" = (
 /obj/effect/decal/cleanable/blood{
 	blood_color = "#A10808";
@@ -1993,10 +1997,6 @@
 /obj/random/cluster/roaches,
 /turf/simulated/floor/snow,
 /area/liberty/outside/forest/dangerous_forest)
-"Jp" = (
-/obj/map_data/frozen_pre_village,
-/turf/unsimulated/mineral,
-/area/colony)
 "Jq" = (
 /obj/effect/decal/cleanable/blood{
 	blood_color = "#A10808";
@@ -3088,7 +3088,7 @@ Yo
 Yo
 Yo
 Yo
-Jp
+ku
 "}
 (2,1,1) = {"
 Yo

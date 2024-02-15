@@ -5990,10 +5990,6 @@
 /obj/machinery/vending/coffee,
 /turf/simulated/floor/wood,
 /area/liberty/maintenance/undergroundfloor2east)
-"bhF" = (
-/obj/structure/grille/broken,
-/turf/simulated/floor/plating/under,
-/area/liberty/maintenance/oldkitchen)
 "bhI" = (
 /obj/structure/table/standard,
 /obj/item/oddity/ls/manual,
@@ -64004,6 +64000,10 @@
 	},
 /turf/simulated/floor/tiled/dark/bluecorner,
 /area/liberty/security/sechall)
+"mgK" = (
+/obj/structure/grille,
+/turf/simulated/floor/plating/under,
+/area/liberty/maintenance/oldkitchen)
 "mgY" = (
 /obj/structure/bed/chair{
 	dir = 1
@@ -104993,10 +104993,6 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/dark/danger,
 /area/liberty/crew_quarters/skyyard)
-"tRp" = (
-/obj/structure/grille,
-/turf/simulated/floor/plating/under,
-/area/liberty/maintenance/oldkitchen)
 "tRt" = (
 /obj/effect/floor_decal/industrial/outline,
 /obj/structure/bed/roller,
@@ -115522,6 +115518,10 @@
 /obj/machinery/light,
 /turf/simulated/floor/rock/manmade/road,
 /area/liberty/outside/range)
+"vQI" = (
+/obj/structure/grille/broken,
+/turf/simulated/floor/plating/under,
+/area/liberty/maintenance/oldkitchen)
 "vQN" = (
 /obj/machinery/disposal,
 /obj/structure/disposalpipe/trunk{
@@ -189971,7 +189971,7 @@ gqS
 mes
 xzS
 nNP
-bhF
+vQI
 tke
 tke
 bHq
@@ -190981,7 +190981,7 @@ nNP
 nNP
 nNP
 nNP
-tRp
+mgK
 tke
 tke
 tke
