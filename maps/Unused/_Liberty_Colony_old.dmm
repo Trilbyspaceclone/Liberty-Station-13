@@ -63285,9 +63285,7 @@
 	icon_state = "vomit_2"
 	},
 /obj/item/remains/human0,
-/obj/item/trash/material/brokenarmorIE5{
-	desc = s
-	},
+/obj/item/trash/material/brokenarmorIE5,
 /turf/simulated/floor/rock,
 /area/liberty/maintenance/undergroundfloor2north)
 "maS" = (
