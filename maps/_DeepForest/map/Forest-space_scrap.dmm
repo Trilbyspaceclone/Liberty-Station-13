@@ -2206,7 +2206,7 @@
 	locked = 0;
 	req_access = newlist()
 	},
-/turf/space,
+/turf/simulated/floor/rock/dark,
 /area/liberty/outside/forest/crashed_spaceloot)
 "yQ" = (
 /obj/item/material/shard/plasma,
@@ -4464,10 +4464,6 @@
 /obj/item/clothing/under/overalls/jumpsuitfoundry,
 /obj/item/clothing/suit/greatcoat/liberty_coat,
 /turf/simulated/floor/rock,
-/area/liberty/outside/forest/crashed_spaceloot)
-"Yd" = (
-/obj/structure/lattice,
-/turf/space,
 /area/liberty/outside/forest/crashed_spaceloot)
 "Yj" = (
 /obj/structure/extinguisher_cabinet{
@@ -23448,7 +23444,7 @@ Oe
 XW
 gb
 Xs
-Yd
+FL
 Xs
 Mm
 XW
@@ -23651,7 +23647,7 @@ XW
 EU
 Xs
 Oc
-Yd
+FL
 gb
 XW
 IM
