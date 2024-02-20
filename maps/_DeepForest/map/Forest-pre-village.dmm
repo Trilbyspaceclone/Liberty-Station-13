@@ -371,6 +371,10 @@
 /obj/structure/flora/tree/snow/snow,
 /turf/simulated/floor/snow,
 /area/liberty/outside/forest/dangerous_forest)
+"gy" = (
+/obj/structure/scrap,
+/turf/simulated/floor/rock,
+/area/colony)
 "gH" = (
 /obj/item/trash/mre_shokoladka,
 /turf/simulated/floor/rock,
@@ -394,6 +398,12 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/wood_old,
 /area/liberty/outside/forest/occupied_camp)
+"ha" = (
+/obj/structure/railing{
+	dir = 8
+	},
+/turf/simulated/floor/wood_old,
+/area/liberty/outside/forest/dangerous_forest)
 "hi" = (
 /obj/structure/kitchenspike,
 /obj/item/stack/material/leather/random,
@@ -584,6 +594,10 @@
 /obj/item/trash/material/brokenarmorrebel0,
 /turf/simulated/floor/snow,
 /area/liberty/outside/forest/occupied_camp)
+"mz" = (
+/obj/structure/flora/small/snow/rock3,
+/turf/simulated/floor/beach/water/ice,
+/area/liberty/outside/forest/dangerous_forest)
 "mA" = (
 /obj/effect/decal/cleanable/blood{
 	blood_color = "#A10808";
@@ -662,6 +676,10 @@
 /mob/living/carbon/superior_animal/liberty/magnibrachius,
 /turf/simulated/floor/snow,
 /area/liberty/outside/forest/dangerous_forest)
+"nP" = (
+/obj/item/stack/material/wood/random,
+/turf/simulated/floor/rock,
+/area/colony)
 "nQ" = (
 /obj/structure/flora/snowgrass,
 /obj/structure/flora/snowgrass,
@@ -677,6 +695,10 @@
 /obj/item/remains/human3,
 /turf/simulated/floor/wood_old,
 /area/liberty/outside/forest/occupied_camp)
+"nS" = (
+/obj/structure/flora/small/snow/rock7,
+/turf/simulated/floor/beach/water/ice,
+/area/liberty/outside/forest/dangerous_forest)
 "nX" = (
 /obj/structure/closet/cabinet,
 /obj/machinery/light,
@@ -726,6 +748,7 @@
 	icon_state = "mgibbl3"
 	},
 /obj/item/reagent_containers/food/drinks/bottle/pwine,
+/obj/item/reagent_containers/hypospray/autoinjector/drugs,
 /turf/simulated/floor/industrial/ornate,
 /area/liberty/outside/forest/Hills_Dark)
 "oV" = (
@@ -740,6 +763,13 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/cafe,
 /area/liberty/outside/forest/occupied_camp)
+"pa" = (
+/obj/structure/railing{
+	dir = 4;
+	tag = "icon-railing0 (EAST)"
+	},
+/turf/simulated/floor/wood_old,
+/area/liberty/outside/forest/dangerous_forest)
 "pg" = (
 /obj/effect/decal/cleanable/blood{
 	blood_color = "#A10808";
@@ -928,6 +958,10 @@
 "ss" = (
 /turf/simulated/mineral/planet,
 /area/colony)
+"sx" = (
+/obj/structure/flora/small/snow/rock8,
+/turf/simulated/floor/beach/water/ice,
+/area/liberty/outside/forest/dangerous_forest)
 "sD" = (
 /obj/machinery/door/unpowered/simple/wood,
 /turf/simulated/floor/wood_old,
@@ -1045,6 +1079,10 @@
 /obj/item/clothing/head/ushanka,
 /turf/simulated/floor/industrial/sierra,
 /area/liberty/outside/forest/Hills_Dark)
+"uS" = (
+/obj/structure/flora/small/snow/rock2,
+/turf/simulated/floor/beach/water/ice,
+/area/liberty/outside/forest/dangerous_forest)
 "uU" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
@@ -1306,7 +1344,8 @@
 	icon_state = "mgibbl3"
 	},
 /obj/effect/golemrune{
-	icon_state = "6"
+	icon_state = "3";
+	blood_color = "#A10808"
 	},
 /turf/simulated/floor/industrial/black_large_slates,
 /area/liberty/outside/forest/Hills_Dark)
@@ -1368,6 +1407,11 @@
 /obj/item/reagent_containers/food/drinks/cans/dr_gibb,
 /turf/simulated/floor/snow,
 /area/liberty/outside/forest/occupied_camp)
+"zg" = (
+/obj/item/reagent_containers/food/condiment/pack/bbq,
+/obj/item/reagent_containers/food/snacks/openable/can,
+/turf/simulated/floor/rock,
+/area/colony)
 "zj" = (
 /turf/simulated/floor/rock,
 /area/liberty/outside/forest/Hills_Dark)
@@ -1504,6 +1548,10 @@
 	},
 /turf/simulated/floor/industrial/ornate,
 /area/liberty/outside/forest/Hills_Dark)
+"BO" = (
+/obj/structure/flora/small/snow/rock5,
+/turf/simulated/floor/beach/water/ice,
+/area/liberty/outside/forest/dangerous_forest)
 "BX" = (
 /obj/structure/flora/snowbush/youngtree,
 /mob/living/carbon/superior_animal/liberty/magnibrachius,
@@ -1587,6 +1635,10 @@
 /obj/structure/barricade,
 /turf/simulated/floor/plating/under,
 /area/liberty/outside/forest/occupied_camp)
+"CN" = (
+/obj/item/device/lighting/glowstick/random,
+/turf/simulated/floor/rock,
+/area/colony)
 "CO" = (
 /mob/living/simple_animal/hostile/hell_pig/wendigo,
 /turf/simulated/floor/snow,
@@ -2003,7 +2055,7 @@
 	color = "#A10808";
 	icon_state = "mgibbl4"
 	},
-/obj/item/clothing/head/helmet/rebel,
+/obj/item/clothing/head/helmet/rebel3,
 /turf/simulated/floor/industrial/ornate,
 /area/liberty/outside/forest/Hills_Dark)
 "Jr" = (
@@ -2019,6 +2071,10 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/wood_old,
 /area/liberty/outside/forest/occupied_camp)
+"Jz" = (
+/obj/structure/flora/small/snow/rock4,
+/turf/simulated/floor/beach/water/ice,
+/area/liberty/outside/forest/dangerous_forest)
 "JD" = (
 /obj/item/stack/material/wood/random,
 /obj/effect/decal/cleanable/dirt,
@@ -2052,6 +2108,10 @@
 /obj/structure/invislight,
 /turf/simulated/floor/snow,
 /area/liberty/outside/forest/dangerous_forest)
+"Kv" = (
+/obj/item/stack/material/steel/random,
+/turf/simulated/floor/rock,
+/area/colony)
 "Kx" = (
 /obj/structure/flora/snowgrass/grass,
 /obj/structure/invislight,
@@ -2077,6 +2137,10 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/wood_old,
 /area/liberty/outside/forest/occupied_camp)
+"KO" = (
+/obj/item/flame/lighter/random,
+/turf/simulated/floor/rock,
+/area/colony)
 "KQ" = (
 /obj/effect/decal/cleanable/blood{
 	blood_color = "#A10808";
@@ -2353,6 +2417,10 @@
 /obj/item/remains/human4,
 /turf/simulated/floor/wood_old,
 /area/liberty/outside/forest/occupied_camp)
+"QT" = (
+/obj/structure/flora/small/snow/rock6,
+/turf/simulated/floor/beach/water/ice,
+/area/liberty/outside/forest/dangerous_forest)
 "QU" = (
 /obj/item/remains/human,
 /turf/simulated/floor/industrial/ornate,
@@ -2502,6 +2570,10 @@
 /obj/item/trash/material/brokenarmorrebel7,
 /turf/simulated/floor/industrial/black_large_slates,
 /area/liberty/outside/forest/Hills_Dark)
+"Ts" = (
+/obj/structure/flora/small/snow/rock1,
+/turf/simulated/floor/beach/water/ice,
+/area/liberty/outside/forest/dangerous_forest)
 "Tx" = (
 /obj/machinery/power/port_gen/pacman/diesel/anchored,
 /obj/effect/decal/cleanable/dirt,
@@ -2541,6 +2613,10 @@
 /obj/structure/flora/snowgrass/rockandgrass,
 /turf/simulated/floor/snow,
 /area/liberty/outside/forest/dangerous_forest)
+"TS" = (
+/obj/random/powercell,
+/turf/simulated/floor/rock,
+/area/colony)
 "TW" = (
 /obj/structure/flora/stump/small,
 /obj/structure/flora/small/snow/rock6,
@@ -2722,6 +2798,9 @@
 /obj/random/ammo/shotgun,
 /turf/simulated/floor/wood_old,
 /area/liberty/outside/forest/occupied_camp)
+"Xx" = (
+/turf/simulated/floor/wood_old,
+/area/liberty/outside/forest/dangerous_forest)
 "Xz" = (
 /obj/structure/decor_light/wallcandle,
 /turf/simulated/wall/wood_old,
@@ -4818,7 +4897,7 @@ yC
 yC
 yC
 yC
-bm
+nS
 vW
 yC
 yC
@@ -5020,7 +5099,7 @@ yC
 yC
 yC
 bm
-bm
+Ts
 bm
 yC
 yC
@@ -5221,9 +5300,9 @@ mQ
 vW
 bC
 yC
-bm
-bm
-bm
+mz
+Jz
+uS
 yC
 yC
 vW
@@ -5425,7 +5504,7 @@ vW
 vW
 bm
 bm
-bm
+Ts
 vW
 vW
 Cx
@@ -5902,8 +5981,8 @@ fu
 fu
 fu
 fu
-fu
-fu
+gy
+gy
 fu
 AN
 or
@@ -6030,7 +6109,7 @@ vW
 vW
 vW
 bm
-bm
+Ts
 bm
 vW
 vW
@@ -6103,7 +6182,7 @@ fu
 fu
 fu
 fu
-fu
+gy
 fu
 fu
 fu
@@ -6233,7 +6312,7 @@ vW
 vW
 bm
 bm
-bm
+BO
 vW
 IE
 Cx
@@ -6433,10 +6512,10 @@ vW
 mQ
 vW
 vW
-bm
-bm
-bm
-vW
+Ts
+Jz
+Xx
+pw
 vW
 vW
 RI
@@ -6511,7 +6590,7 @@ fu
 fu
 fu
 fu
-fu
+KO
 dK
 gH
 ss
@@ -6635,8 +6714,8 @@ tL
 vW
 vW
 vW
-bm
-bm
+Xx
+Xx
 bm
 vW
 vW
@@ -6710,12 +6789,12 @@ ss
 ss
 ss
 ss
-fu
+TS
 rP
 fu
 fu
-fu
-fu
+nP
+CN
 ss
 ss
 ss
@@ -6837,8 +6916,8 @@ vW
 vW
 vW
 vW
-bm
-bm
+Xx
+mz
 bm
 vW
 vW
@@ -6915,8 +6994,8 @@ ss
 ss
 JI
 fu
-fu
-fu
+zg
+Kv
 ss
 ss
 ss
@@ -7237,7 +7316,7 @@ vW
 vW
 vW
 vW
-vW
+pw
 vW
 bm
 bm
@@ -7439,8 +7518,8 @@ bm
 bm
 bm
 bm
-bm
-bm
+Xx
+mz
 bm
 bm
 bm
@@ -7641,8 +7720,8 @@ bm
 bm
 bm
 bm
-bm
-bm
+Xx
+BO
 bm
 bm
 bm
@@ -7843,8 +7922,8 @@ bm
 bm
 bm
 bm
-bm
-bm
+Xx
+Xx
 bm
 bm
 bm
@@ -8045,9 +8124,9 @@ bm
 bm
 bm
 bm
-bm
-bm
-bm
+Jz
+Xx
+Ts
 bm
 bm
 bm
@@ -9065,9 +9144,9 @@ vW
 bm
 bm
 bm
-bm
-bm
-RI
+Ts
+uS
+vW
 vW
 vW
 ZC
@@ -9266,9 +9345,9 @@ vW
 vW
 bm
 bm
-bm
-bm
-bm
+sx
+Xx
+Xx
 vW
 vW
 vW
@@ -9468,9 +9547,9 @@ vW
 vW
 vW
 bm
-bm
-bm
-bm
+mz
+Xx
+QT
 bm
 vW
 Cx
@@ -9670,8 +9749,8 @@ vW
 vW
 vW
 bm
-bm
-bm
+Xx
+Xx
 bm
 bm
 bm
@@ -9872,7 +9951,7 @@ vW
 vW
 vW
 vW
-bm
+Xx
 bm
 bm
 bm
@@ -10074,7 +10153,7 @@ vW
 vW
 vW
 vW
-bm
+Jz
 bm
 bm
 bm
@@ -17267,7 +17346,7 @@ vW
 Qb
 vW
 vW
-bm
+Xx
 bm
 bm
 bm
@@ -17471,7 +17550,7 @@ vW
 vW
 bm
 bm
-bm
+Xx
 bm
 bm
 bm
@@ -17670,10 +17749,10 @@ tV
 vW
 vW
 vW
-bm
-bm
-bm
-bm
+Xx
+Xx
+Xx
+Xx
 bm
 bm
 bm
@@ -17874,8 +17953,8 @@ vW
 vW
 bm
 bm
-bm
-bm
+Xx
+Xx
 bm
 bm
 bm
@@ -18077,9 +18156,9 @@ vW
 bm
 bm
 bm
-bm
-bm
-bm
+Xx
+Xx
+Xx
 bm
 vW
 ZC
@@ -18278,10 +18357,10 @@ vW
 vW
 bm
 bm
+Xx
 bm
-bm
-bm
-bm
+Xx
+Xx
 bm
 vW
 vW
@@ -18376,9 +18455,9 @@ vW
 vW
 vW
 bm
-bm
-bm
-bm
+Ts
+uS
+Xx
 vW
 vW
 vW
@@ -18482,8 +18561,8 @@ bm
 bm
 bm
 bm
-bm
-bm
+Xx
+Xx
 vW
 vW
 vW
@@ -18577,10 +18656,10 @@ vW
 mi
 vW
 vW
-bm
-bm
-bm
-bm
+BO
+Xx
+Xx
+nS
 vW
 vW
 vW
@@ -18684,7 +18763,7 @@ bm
 bm
 bm
 bm
-bm
+Xx
 vW
 vW
 ZC
@@ -18779,8 +18858,8 @@ vW
 vW
 vW
 vW
-bm
-bm
+Xx
+QT
 bm
 bm
 vW
@@ -18981,7 +19060,7 @@ vW
 vW
 vW
 vW
-bm
+mz
 bm
 bm
 bm
@@ -19183,7 +19262,7 @@ tV
 vW
 vW
 vW
-bm
+uS
 bm
 bm
 bm
@@ -35950,10 +36029,10 @@ vW
 vW
 vW
 vW
-bm
-bm
-bm
-bm
+ha
+ha
+ha
+ha
 vW
 Fg
 vW
@@ -36152,10 +36231,10 @@ vW
 vW
 pw
 vW
-bm
-bm
-bm
-bm
+Xx
+Xx
+Xx
+Xx
 vW
 vW
 vW
@@ -36354,10 +36433,10 @@ vW
 vW
 vW
 vW
-bm
-bm
-bm
-bm
+Xx
+Xx
+Xx
+Xx
 vW
 vW
 Ff
@@ -36556,10 +36635,10 @@ vW
 vW
 vW
 Ff
-bm
-bm
-bm
-bm
+pa
+pa
+pa
+pa
 vW
 vW
 vW

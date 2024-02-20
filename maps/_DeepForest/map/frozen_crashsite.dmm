@@ -39,30 +39,18 @@
 /obj/structure/flora/small/snow/rock5,
 /turf/simulated/floor/snow,
 /area/liberty/dungeon/outside/frozen_forest/crashsite)
-"av" = (
-/obj/effect/decal/cleanable/dirt/snow,
-/obj/effect/decal/cleanable/dirt/snow,
-/obj/item/clothing/suit/storage/toggle/liberass_jacket,
-/turf/simulated/floor/asteroid/dirt/dust,
-/area/liberty/dungeon/outside/farm)
 "az" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/cryopod/dormitory,
-/obj/item/remains,
-/obj/item/remains/ribcage,
 /obj/effect/decal/cleanable/blood{
 	blood_color = "#A10808";
 	color = "#A10808";
 	icon_state = "splatter1"
 	},
+/obj/item/remains/human2,
 /turf/simulated/floor/wood/wild4,
 /area/liberty/dungeon/outside/farm)
 "aB" = (
-/obj/effect/decal/cleanable/blood{
-	blood_color = "#A10808";
-	color = "#A10808";
-	icon_state = "mfloor5"
-	},
 /obj/item/storage/backpack/satchel/security,
 /turf/simulated/floor/snow,
 /area/liberty/dungeon/outside/frozen_forest/crashsite)
@@ -106,7 +94,6 @@
 /area/liberty/dungeon/outside/shuttle_crash)
 "aX" = (
 /obj/effect/decal/cleanable/dirt/snow,
-/obj/item/remains,
 /obj/effect/decal/cleanable/blood{
 	blood_color = "#A10808";
 	color = "#A10808";
@@ -127,12 +114,10 @@
 	color = "#A10808";
 	icon_state = "splatter1"
 	},
+/obj/item/remains/human2,
+/obj/item/trash/material/brokenarmorrebel6,
 /turf/simulated/floor/asteroid/dirt/dust,
 /area/liberty/dungeon/outside/farm)
-"aY" = (
-/obj/item/stack/material/animalhide/human,
-/turf/simulated/floor/wood/wild4,
-/area/liberty/dungeon/outside/frozen_forest/crashsite)
 "bf" = (
 /obj/random/gun_shotgun,
 /obj/item/ammo_casing/shotgun/payload,
@@ -161,7 +146,8 @@
 	blood_color = "#A10808";
 	color = "#A10808"
 	},
-/obj/item/remains/ribcage,
+/obj/item/remains/human2,
+/obj/item/trash/material/brokenarmorrebel6,
 /turf/simulated/floor/wood/wild4,
 /area/liberty/dungeon/outside/frozen_forest/crashsite)
 "br" = (
@@ -198,14 +184,6 @@
 "bz" = (
 /turf/simulated/wall/wood_barrel,
 /area/liberty/dungeon/outside/frozen_forest/crashsite_cave)
-"bF" = (
-/obj/effect/decal/cleanable/blood{
-	blood_color = "#A10808";
-	color = "#A10808"
-	},
-/obj/item/clothing/under/snowjump,
-/turf/simulated/floor/wood/wild4,
-/area/liberty/dungeon/outside/frozen_forest/crashsite)
 "bH" = (
 /obj/structure/window/reinforced{
 	dir = 8
@@ -252,16 +230,6 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/wood_old,
 /area/liberty/dungeon/outside/abandoned_outpost)
-"ch" = (
-/obj/effect/decal/cleanable/dirt/snow,
-/obj/effect/decal/cleanable/blood{
-	blood_color = "#A10808";
-	color = "#A10808"
-	},
-/obj/item/remains/human,
-/obj/item/stack/material/animalhide/human,
-/turf/simulated/floor/snow,
-/area/liberty/dungeon/outside/frozen_forest/crashsite)
 "ci" = (
 /obj/structure/sink/kitchen,
 /turf/simulated/floor/wood/wild4,
@@ -334,11 +302,12 @@
 /turf/simulated/floor/rock/grey,
 /area/liberty/dungeon/outside/monster_cave)
 "cP" = (
-/obj/item/remains/human,
 /obj/effect/decal/cleanable/blood{
 	blood_color = "#A10808";
 	color = "#A10808"
 	},
+/obj/item/remains/human4,
+/obj/item/trash/material/brokenarmorrebel7,
 /turf/simulated/floor/wood/wild4,
 /area/liberty/dungeon/outside/frozen_forest/crashsite)
 "cQ" = (
@@ -364,10 +333,9 @@
 /turf/simulated/floor/asteroid/dirt/dust,
 /area/liberty/dungeon/outside/farm)
 "dd" = (
-/obj/item/stack/material/animalhide/human,
-/obj/item/reagent_containers/food/snacks/human/kabob,
-/obj/item/reagent_containers/food/snacks/meat/human,
-/turf/simulated/floor/snow,
+/obj/effect/decal/cleanable/dirt,
+/obj/item/gun/projectile/shotgun/doublebarrel,
+/turf/simulated/floor/wood/wild4,
 /area/liberty/dungeon/outside/frozen_forest/crashsite)
 "dg" = (
 /obj/structure/coatrack,
@@ -412,7 +380,6 @@
 	color = "#A10808";
 	icon_state = "mgibbl5"
 	},
-/obj/item/clothing/head/ushanka,
 /turf/simulated/floor/snow,
 /area/liberty/dungeon/outside/farm)
 "dz" = (
@@ -420,7 +387,6 @@
 	blood_color = "#A10808";
 	color = "#A10808"
 	},
-/obj/item/remains/human,
 /obj/effect/decal/cleanable/blood{
 	blood_color = "#A10808";
 	color = "#A10808";
@@ -468,7 +434,9 @@
 	dir = 4
 	},
 /obj/effect/decal/cleanable/dirt,
-/obj/item/stack/material/animalhide/human,
+/obj/item/ammo_casing/shotgun/ceramic{
+	amount = 5
+	},
 /turf/simulated/floor/wood/wild4,
 /area/liberty/dungeon/outside/frozen_forest/crashsite)
 "dO" = (
@@ -533,12 +501,6 @@
 /obj/structure/flora/small/snow/rock6,
 /turf/simulated/floor/beach/water/ice,
 /area/liberty/dungeon/outside/frozen_forest/crashsite_lakes)
-"eu" = (
-/obj/item/remains/ribcage,
-/obj/item/stack/material/animalhide/human,
-/obj/machinery/space_heater,
-/turf/simulated/floor/wood/wild4,
-/area/liberty/dungeon/outside/frozen_forest/crashsite)
 "eB" = (
 /obj/item/clothing/suit/gorka/toggle/gorka/crew,
 /obj/item/clothing/accessory/scarf/furblack,
@@ -598,7 +560,6 @@
 	color = "#A10808";
 	icon_state = "splatter6"
 	},
-/obj/item/stack/material/animalhide/human,
 /turf/simulated/floor/wood/wild4,
 /area/liberty/dungeon/outside/frozen_forest/crashsite)
 "fg" = (
@@ -647,10 +608,6 @@
 /turf/simulated/floor/wood/wild4,
 /area/liberty/dungeon/outside/frozen_forest/crashsite)
 "fy" = (
-/obj/item/ammo_casing/shotgun/ceramic{
-	amount = 5
-	},
-/obj/item/remains/ribcage,
 /obj/effect/decal/cleanable/blood{
 	blood_color = "#A10808";
 	color = "#A10808";
@@ -661,7 +618,6 @@
 	color = "#A10808";
 	icon_state = "splatter5"
 	},
-/obj/item/clothing/suit/rank/chef/classic,
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/wood/wild4,
 /area/liberty/dungeon/outside/frozen_forest/crashsite)
@@ -683,11 +639,13 @@
 /area/liberty/dungeon/outside/frozen_forest/crashsite)
 "fH" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/item/remains,
 /obj/effect/decal/cleanable/blood{
 	blood_color = "#A10808";
 	color = "#A10808";
 	icon_state = "splatter4"
+	},
+/obj/item/ammo_casing/light_rifle_257/scrap{
+	amount = 10
 	},
 /turf/simulated/floor/wood/wild4,
 /area/liberty/dungeon/outside/farm)
@@ -868,11 +826,6 @@
 	icon_state = "cargoshwall22"
 	},
 /area/liberty/dungeon/outside/shuttle_crash)
-"hL" = (
-/obj/structure/flora/small/snow/rock1,
-/obj/item/stack/material/animalhide/human,
-/turf/simulated/floor/snow,
-/area/liberty/dungeon/outside/farm)
 "hM" = (
 /obj/structure/flora/tree/snow/three,
 /turf/unsimulated/wall/snow,
@@ -885,7 +838,7 @@
 /obj/item/storage/backpack/duffelbag/leather,
 /obj/structure/table/rack/shelf,
 /obj/effect/decal/cleanable/dirt,
-/obj/item/clothing/under/snowjump,
+/obj/item/clothing/under/serbiansuit/brown,
 /turf/simulated/floor/wood/wild4,
 /area/liberty/dungeon/outside/frozen_forest/crashsite)
 "hQ" = (
@@ -901,29 +854,17 @@
 /obj/random/closet_maintloot,
 /turf/simulated/floor/wood/wild4,
 /area/liberty/dungeon/outside/frozen_forest/crashsite)
-"ic" = (
-/obj/effect/decal/cleanable/blood{
-	blood_color = "#A10808";
-	color = "#A10808"
-	},
-/obj/item/stack/material/animalhide/human,
-/turf/simulated/floor/wood/wild4,
-/area/liberty/dungeon/outside/frozen_forest/crashsite)
 "ie" = (
-/obj/item/stack/material/animalhide/human,
-/obj/effect/decal/cleanable/blood/drip{
-	blood_color = "#A10808";
-	color = "#A10808"
-	},
-/turf/simulated/floor/snow,
-/area/liberty/dungeon/outside/frozen_forest/crashsite)
-"if" = (
-/obj/item/remains/ribcage,
 /obj/effect/decal/cleanable/blood{
 	blood_color = "#A10808";
 	color = "#A10808";
-	icon_state = "splatter4"
+	icon_state = "mgibbl2"
 	},
+/obj/item/storage/pouch/ammo,
+/turf/simulated/floor/snow,
+/area/liberty/dungeon/outside/frozen_forest/crashsite)
+"if" = (
+/obj/item/remains/human2,
 /turf/simulated/floor/wood/wild4,
 /area/liberty/dungeon/outside/frozen_forest/crashsite)
 "ig" = (
@@ -933,15 +874,6 @@
 	},
 /turf/simulated/floor/wood/wild4,
 /area/liberty/dungeon/outside/frozen_forest/crashsite)
-"ii" = (
-/obj/effect/decal/cleanable/blood{
-	blood_color = "#A10808";
-	color = "#A10808";
-	icon_state = "splatter3"
-	},
-/obj/item/clothing/head/ushanka,
-/turf/simulated/floor/snow,
-/area/liberty/dungeon/outside/farm)
 "ij" = (
 /obj/structure/flora/tree/snow/five,
 /turf/simulated/floor/snow,
@@ -975,7 +907,6 @@
 /turf/simulated/floor/wood/wild4,
 /area/liberty/dungeon/outside/frozen_forest/crashsite)
 "iF" = (
-/obj/item/remains/human,
 /obj/effect/decal/cleanable/blood{
 	blood_color = "#A10808";
 	color = "#A10808";
@@ -986,6 +917,7 @@
 	color = "#A10808";
 	icon_state = "mfloor5"
 	},
+/obj/item/remains/human4,
 /turf/simulated/floor/wood/wild4,
 /area/liberty/dungeon/outside/frozen_forest/crashsite)
 "iI" = (
@@ -1038,7 +970,6 @@
 	color = "#A10808";
 	icon_state = "splatter2"
 	},
-/obj/item/remains,
 /turf/simulated/floor/snow,
 /area/liberty/dungeon/outside/frozen_forest/crashsite)
 "js" = (
@@ -1209,12 +1140,6 @@
 	},
 /turf/simulated/floor/industrial/ornate,
 /area/liberty/dungeon/outside/abandoned_outpost)
-"kY" = (
-/obj/item/clothing/suit/gorka/toggle/gorka/crew_light_b,
-/obj/item/clothing/accessory/scarf/furblack,
-/obj/item/clothing/under/snowjump,
-/turf/simulated/floor/wood/wild4,
-/area/liberty/dungeon/outside/frozen_forest/crashsite)
 "kZ" = (
 /obj/structure/table/woodentable,
 /turf/simulated/floor/wood/wild4,
@@ -1336,7 +1261,8 @@
 	color = "#A10808";
 	icon_state = "mfloor6"
 	},
-/obj/item/remains,
+/obj/item/remains/human4,
+/obj/item/trash/material/brokenarmorrebel7,
 /turf/simulated/floor/snow,
 /area/liberty/dungeon/outside/farm)
 "mm" = (
@@ -1363,7 +1289,6 @@
 /turf/simulated/floor/snow,
 /area/liberty/dungeon/outside/frozen_forest/crashsite)
 "ms" = (
-/obj/item/remains,
 /obj/effect/decal/cleanable/blood{
 	blood_color = "#A10808";
 	color = "#A10808";
@@ -1379,6 +1304,8 @@
 	color = "#A10808";
 	icon_state = "mgibbl2"
 	},
+/obj/item/remains/human3,
+/obj/item/trash/material/brokenarmorrebel7,
 /turf/simulated/floor/snow,
 /area/liberty/dungeon/outside/farm)
 "mu" = (
@@ -1416,10 +1343,6 @@
 /obj/item/storage/deferred/comms,
 /turf/simulated/floor/rock/grey,
 /area/colony)
-"mO" = (
-/obj/item/storage/pouch/ammo,
-/turf/simulated/floor/snow,
-/area/liberty/dungeon/outside/frozen_forest/crashsite)
 "mP" = (
 /obj/item/storage/toolbox/emergency,
 /obj/item/storage/toolbox/mechanical,
@@ -1430,8 +1353,9 @@
 /turf/simulated/floor/wood/wild4,
 /area/liberty/dungeon/outside/frozen_forest/crashsite)
 "mR" = (
-/obj/item/remains/human,
 /obj/effect/decal/cleanable/dirt,
+/obj/item/remains/human2,
+/obj/item/trash/material/brokenarmorrebel6,
 /turf/simulated/floor/wood/wild4,
 /area/liberty/dungeon/outside/frozen_forest/crashsite)
 "mU" = (
@@ -1512,6 +1436,8 @@
 	icon_state = "mfloor6"
 	},
 /obj/item/remains/ribcage,
+/obj/item/remains/human1,
+/obj/item/trash/material/brokenarmorrebel1,
 /turf/simulated/floor/snow,
 /area/liberty/dungeon/outside/frozen_forest/crashsite)
 "nv" = (
@@ -1521,12 +1447,7 @@
 /turf/simulated/floor/wood/wild4,
 /area/liberty/dungeon/outside/frozen_forest/crashsite)
 "nx" = (
-/obj/effect/decal/cleanable/blood{
-	blood_color = "#A10808";
-	color = "#A10808"
-	},
-/obj/effect/decal/cleanable/dirt,
-/obj/item/stack/material/animalhide/human,
+/obj/item/clothing/suit/rank/chef/classic,
 /turf/simulated/floor/wood/wild4,
 /area/liberty/dungeon/outside/frozen_forest/crashsite)
 "ny" = (
@@ -2018,7 +1939,6 @@
 	color = "#A10808";
 	icon_state = "splatter4"
 	},
-/obj/item/clothing/under/snowjump,
 /turf/simulated/floor/snow,
 /area/liberty/dungeon/outside/farm)
 "ri" = (
@@ -2063,7 +1983,6 @@
 	color = "#A10808";
 	icon_state = "splatter5"
 	},
-/obj/item/stack/material/animalhide/human,
 /turf/simulated/floor/snow,
 /area/liberty/dungeon/outside/frozen_forest/crashsite)
 "rD" = (
@@ -2329,20 +2248,6 @@
 /obj/structure/scrap,
 /turf/simulated/floor/wood/wild4,
 /area/liberty/dungeon/outside/frozen_forest/crashsite)
-"tz" = (
-/obj/effect/decal/cleanable/blood{
-	blood_color = "#A10808";
-	color = "#A10808";
-	icon_state = "splatter2"
-	},
-/obj/effect/decal/cleanable/blood{
-	blood_color = "#A10808";
-	color = "#A10808";
-	icon_state = "splatter6"
-	},
-/obj/item/remains,
-/turf/simulated/floor/snow,
-/area/liberty/dungeon/outside/frozen_forest/crashsite)
 "tB" = (
 /obj/structure/barricade,
 /turf/simulated/floor/rock/grey,
@@ -2400,12 +2305,12 @@
 /turf/simulated/floor/wood/wild4,
 /area/liberty/dungeon/outside/frozen_forest/crashsite)
 "tZ" = (
-/obj/item/remains/human,
 /obj/effect/decal/cleanable/blood{
 	blood_color = "#A10808";
 	color = "#A10808"
 	},
 /obj/effect/decal/cleanable/dirt,
+/obj/item/remains/human2,
 /turf/simulated/floor/wood/wild4,
 /area/liberty/dungeon/outside/frozen_forest/crashsite)
 "ub" = (
@@ -2526,7 +2431,10 @@
 	blood_color = "#A10808";
 	color = "#A10808"
 	},
-/obj/item/clothing/head/ushanka,
+/obj/item/remains/human0,
+/obj/item/trash/material/brokenarmorrebel2,
+/obj/item/clothing/accessory/scarf/furblack,
+/obj/item/trash/material/brokenhelmetrebel2,
 /turf/simulated/floor/wood/wild4,
 /area/liberty/dungeon/outside/frozen_forest/crashsite)
 "vb" = (
@@ -2538,14 +2446,12 @@
 	blood_color = "#A10808";
 	color = "#A10808"
 	},
-/obj/item/clothing/suit/gorka/toggle/gorka/dark,
 /obj/effect/decal/cleanable/blood{
 	blood_color = "#A10808";
 	color = "#A10808";
 	icon_state = "mgibbl4"
 	},
 /obj/item/clothing/accessory/scarf/furblack,
-/obj/item/clothing/under/snowjump,
 /turf/simulated/floor/wood/wild4,
 /area/liberty/dungeon/outside/frozen_forest/crashsite)
 "vd" = (
@@ -2732,11 +2638,11 @@
 /obj/structure/bed/chair/wood{
 	dir = 8
 	},
-/obj/item/remains/human,
 /obj/effect/decal/cleanable/blood{
 	blood_color = "#A10808";
 	color = "#A10808"
 	},
+/obj/item/remains/human1,
 /turf/simulated/floor/wood/wild4,
 /area/liberty/dungeon/outside/frozen_forest/crashsite)
 "wH" = (
@@ -2762,7 +2668,6 @@
 	color = "#A10808";
 	icon_state = "splatter2"
 	},
-/obj/item/clothing/head/ushanka,
 /turf/simulated/floor/snow,
 /area/liberty/dungeon/outside/farm)
 "wT" = (
@@ -2871,12 +2776,7 @@
 	color = "#A10808";
 	icon_state = "splatter2"
 	},
-/obj/item/remains/ribcage,
 /turf/simulated/floor/asteroid/dirt/dust,
-/area/liberty/dungeon/outside/farm)
-"xG" = (
-/obj/item/clothing/under/snowjump,
-/turf/simulated/floor/snow,
 /area/liberty/dungeon/outside/farm)
 "xH" = (
 /obj/effect/decal/cleanable/dirt/snow,
@@ -2888,9 +2788,12 @@
 /turf/simulated/floor/snow,
 /area/liberty/dungeon/outside/frozen_forest/crashsite)
 "xO" = (
-/obj/item/stack/material/animalhide/human,
-/obj/item/reagent_containers/food/snacks/human/kabob,
-/turf/simulated/floor/snow,
+/obj/effect/decal/cleanable/blood{
+	blood_color = "#A10808";
+	color = "#A10808"
+	},
+/obj/item/remains/human2,
+/turf/simulated/floor/wood/wild4,
 /area/liberty/dungeon/outside/frozen_forest/crashsite)
 "xQ" = (
 /obj/machinery/door/unpowered/simple/wood,
@@ -2898,7 +2801,9 @@
 /area/liberty/dungeon/outside/frozen_forest/crashsite_cave_under)
 "xR" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/item/gun/projectile/boltgun/rosefield,
+/obj/item/ammo_casing/light_rifle_257/spent{
+	amount = 10
+	},
 /turf/simulated/floor/wood/wild4,
 /area/liberty/dungeon/outside/farm)
 "xT" = (
@@ -2918,13 +2823,12 @@
 /turf/simulated/mineral/planet,
 /area/colony)
 "xX" = (
-/obj/item/remains/human,
 /obj/effect/decal/cleanable/blood{
 	blood_color = "#A10808";
 	color = "#A10808"
 	},
 /obj/effect/decal/cleanable/dirt,
-/obj/item/stack/material/animalhide/human,
+/obj/item/remains/human4,
 /turf/simulated/floor/wood/wild4,
 /area/liberty/dungeon/outside/frozen_forest/crashsite)
 "xZ" = (
@@ -2999,7 +2903,6 @@
 "yQ" = (
 /obj/effect/decal/cleanable/dirt/snow,
 /obj/item/tool/cheap/axe,
-/obj/item/stack/material/animalhide/human,
 /turf/simulated/floor/asteroid/dirt/dust,
 /area/liberty/dungeon/outside/farm)
 "yT" = (
@@ -3050,8 +2953,6 @@
 	color = "#A10808";
 	icon_state = "splatter5"
 	},
-/obj/item/remains/ribcage,
-/obj/item/clothing/suit/storage/toggle/liberass_jacket,
 /turf/simulated/floor/asteroid/dirt/dust,
 /area/liberty/dungeon/outside/farm)
 "zh" = (
@@ -3164,7 +3065,6 @@
 /turf/simulated/floor/icewater,
 /area/liberty/dungeon/outside/frozen_forest/crashsite_cave_under)
 "Af" = (
-/obj/item/remains,
 /obj/effect/decal/cleanable/blood{
 	blood_color = "#A10808";
 	color = "#A10808";
@@ -3205,8 +3105,20 @@
 /turf/simulated/floor/rock/dark,
 /area/liberty/dungeon/outside/frozen_forest/crashsite_cave_under)
 "Aw" = (
-/obj/random/mob/vox/low_chance,
-/obj/item/stack/material/animalhide/human,
+/obj/item/remains/human0,
+/obj/item/trash/material/brokenarmorrebel1,
+/obj/item/clothing/accessory/scarf/furblack,
+/obj/effect/decal/cleanable/blood{
+	blood_color = "#A10808";
+	color = "#A10808";
+	icon_state = "gibup1"
+	},
+/obj/effect/decal/cleanable/blood{
+	blood_color = "#A10808";
+	color = "#A10808";
+	icon_state = "itemblood"
+	},
+/obj/item/trash/material/brokenhelmetrebel0,
 /turf/simulated/floor/snow,
 /area/liberty/dungeon/outside/frozen_forest/crashsite)
 "AB" = (
@@ -3287,7 +3199,6 @@
 /turf/simulated/floor/snow,
 /area/liberty/dungeon/outside/frozen_forest/crashsite)
 "Bg" = (
-/obj/item/remains/human,
 /obj/effect/decal/cleanable/blood{
 	blood_color = "#A10808";
 	color = "#A10808"
@@ -3295,6 +3206,7 @@
 /obj/machinery/light{
 	dir = 1
 	},
+/obj/item/remains/human1,
 /turf/simulated/floor/wood/wild4,
 /area/liberty/dungeon/outside/frozen_forest/crashsite)
 "Bi" = (
@@ -3305,10 +3217,6 @@
 "Bl" = (
 /turf/simulated/wall/tomb_king,
 /area/liberty/dungeon/outside/abandoned_outpost)
-"Bm" = (
-/obj/item/remains/ribcage,
-/turf/simulated/floor/wood/wild4,
-/area/liberty/dungeon/outside/frozen_forest/crashsite)
 "Bn" = (
 /turf/simulated/floor/snow,
 /area/colony)
@@ -3337,9 +3245,9 @@
 /turf/simulated/floor/wood/wild4,
 /area/liberty/dungeon/outside/frozen_forest/crashsite)
 "BH" = (
-/obj/item/stack/material/animalhide/human,
-/turf/simulated/floor/snow,
-/area/liberty/dungeon/outside/frozen_forest/crashsite)
+/obj/item/tool/spear/steel,
+/turf/simulated/floor/rock/grey,
+/area/liberty/dungeon/outside/frozen_forest/crashsite_cave)
 "BI" = (
 /obj/structure/multiz/stairs/enter/bottom{
 	dir = 4
@@ -3353,7 +3261,6 @@
 /area/liberty/dungeon/outside/frozen_forest/crashsite)
 "BK" = (
 /obj/machinery/cryopod/dormitory,
-/obj/item/clothing/under/snowjump,
 /turf/simulated/floor/wood/wild4,
 /area/liberty/dungeon/outside/farm)
 "BL" = (
@@ -3363,15 +3270,6 @@
 /obj/structure/boulder,
 /turf/simulated/floor/rock/dark,
 /area/liberty/dungeon/outside/shuttle_crash)
-"BM" = (
-/obj/effect/decal/cleanable/blood{
-	blood_color = "#A10808";
-	color = "#A10808"
-	},
-/obj/item/remains/ribcage,
-/obj/item/stack/material/animalhide/human,
-/turf/simulated/floor/wood/wild4,
-/area/liberty/dungeon/outside/frozen_forest/crashsite)
 "BN" = (
 /obj/structure/flora/tree/snow/five,
 /turf/unsimulated/wall/snow,
@@ -3427,9 +3325,12 @@
 /turf/simulated/floor/wood_old,
 /area/liberty/dungeon/outside/abandoned_outpost)
 "Cn" = (
-/obj/effect/decal/cleanable/dirt/snow,
-/obj/item/stack/material/animalhide/human,
-/turf/simulated/floor/snow,
+/obj/effect/decal/cleanable/blood{
+	blood_color = "#A10808";
+	color = "#A10808"
+	},
+/obj/item/remains/human4,
+/turf/simulated/floor/wood/wild4,
 /area/liberty/dungeon/outside/frozen_forest/crashsite)
 "Co" = (
 /obj/structure/flora/small/snow/rock1,
@@ -3554,12 +3455,12 @@
 /turf/simulated/floor/wood/wild4,
 /area/liberty/dungeon/outside/frozen_forest/crashsite)
 "Dx" = (
-/obj/structure/bed,
-/obj/item/bedsheet/brown,
-/obj/effect/decal/cleanable/dirt,
-/obj/item/stack/material/animalhide/human,
-/turf/simulated/floor/wood/wild4,
-/area/liberty/dungeon/outside/frozen_forest/crashsite)
+/obj/item/remains/human1,
+/obj/item/trash/material/brokenarmorrebel1,
+/obj/item/trash/material/brokenhelmetrebel2,
+/obj/item/clothing/accessory/scarf/furblack,
+/turf/simulated/floor/rock/grey,
+/area/liberty/dungeon/outside/frozen_forest/crashsite_cave)
 "DB" = (
 /obj/structure/sandbags{
 	icon_state = "sandbag_0";
@@ -3772,7 +3673,6 @@
 /turf/unsimulated/mineral/transition,
 /area/liberty/dungeon/outside/frozen_forest/crashsite)
 "FJ" = (
-/obj/item/remains/human,
 /obj/effect/decal/cleanable/blood{
 	blood_color = "#A10808";
 	color = "#A10808";
@@ -3840,12 +3740,6 @@
 /obj/effect/decal/cleanable/rubble,
 /turf/simulated/floor/rock/dark,
 /area/liberty/dungeon/outside/frozen_forest/crashsite_cave_under)
-"Gt" = (
-/obj/item/ammo_casing/light_rifle_257/scrap{
-	amount = 10
-	},
-/turf/simulated/floor/wood/wild4,
-/area/liberty/dungeon/outside/farm)
 "Gu" = (
 /obj/random/mob/vox/low_chance,
 /turf/simulated/floor/snow,
@@ -3971,7 +3865,6 @@
 	color = "#A10808";
 	icon_state = "mgibbl2"
 	},
-/obj/item/clothing/suit/storage/toggle/liberass_jacket,
 /turf/simulated/floor/asteroid/dirt/dust,
 /area/liberty/dungeon/outside/farm)
 "GX" = (
@@ -4111,8 +4004,12 @@
 /turf/simulated/floor/snow,
 /area/liberty/dungeon/outside/frozen_forest/crashsite)
 "IA" = (
-/obj/item/gun/projectile/automatic/duty,
-/turf/simulated/floor/snow,
+/obj/effect/decal/cleanable/blood{
+	blood_color = "#A10808";
+	color = "#A10808"
+	},
+/obj/item/remains/human4,
+/turf/simulated/floor/plating/under,
 /area/liberty/dungeon/outside/frozen_forest/crashsite)
 "ID" = (
 /obj/machinery/slotmachine,
@@ -4137,7 +4034,6 @@
 	color = "#A10808";
 	icon_state = "splatter6"
 	},
-/obj/item/stack/material/animalhide/human,
 /turf/simulated/floor/wood/wild4,
 /area/liberty/dungeon/outside/frozen_forest/crashsite)
 "IR" = (
@@ -4199,7 +4095,7 @@
 "Jk" = (
 /obj/effect/decal/cleanable/blood{
 	blood_color = "#A10808";
-	color = "#A10808";
+	color = "#DB0000";
 	icon_state = "splatter2"
 	},
 /obj/effect/decal/cleanable/blood{
@@ -4324,8 +4220,9 @@
 /area/liberty/dungeon/outside/frozen_forest/crashsite)
 "JZ" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/table/woodentable,
-/obj/random/pouch,
+/obj/item/remains/human0,
+/obj/item/trash/material/brokenhelmetrebel4,
+/obj/item/trash/material/brokenarmorrebel0,
 /turf/simulated/floor/wood/wild4,
 /area/liberty/dungeon/outside/farm)
 "Kd" = (
@@ -4639,11 +4536,10 @@
 	icon_state = "splatter5"
 	},
 /obj/machinery/light,
-/obj/item/stack/material/animalhide/human,
 /turf/simulated/floor/wood/wild4,
 /area/liberty/dungeon/outside/farm)
 "Mv" = (
-/obj/item/remains/human,
+/obj/item/remains/human2,
 /turf/simulated/floor/plating/under,
 /area/liberty/dungeon/outside/frozen_forest/crashsite)
 "Mx" = (
@@ -4654,15 +4550,6 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/hull,
 /area/liberty/dungeon/outside/frozen_forest/crashsite_cave_under)
-"MB" = (
-/obj/effect/decal/cleanable/blood{
-	blood_color = "#A10808";
-	color = "#A10808";
-	icon_state = "splatter4"
-	},
-/obj/item/stack/material/animalhide/human,
-/turf/simulated/floor/snow,
-/area/liberty/dungeon/outside/frozen_forest/crashsite)
 "MD" = (
 /turf/simulated/floor/plating/under,
 /area/liberty/dungeon/outside/farm)
@@ -4675,23 +4562,19 @@
 /turf/simulated/floor/rock/dark,
 /area/colony)
 "MH" = (
-/obj/effect/decal/cleanable/blood{
-	blood_color = "#A10808";
-	color = "#A10808";
-	icon_state = "splatter1"
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/obj/item/ammo_casing/light_rifle_257/spent{
+	amount = 10
 	},
-/obj/item/stack/material/animalhide/human,
-/turf/simulated/floor/snow,
+/turf/simulated/floor/wood/wild4,
 /area/liberty/dungeon/outside/frozen_forest/crashsite)
 "MN" = (
 /obj/effect/decal/cleanable/dirt/snow,
 /obj/structure/invislight/outside,
 /turf/simulated/mineral/planet,
 /area/liberty/dungeon/outside/monster_cave)
-"MR" = (
-/obj/item/clothing/head/ushanka,
-/turf/simulated/floor/snow,
-/area/liberty/dungeon/outside/frozen_forest/crashsite)
 "MS" = (
 /obj/structure/flora/tree/snow/snow,
 /turf/unsimulated/wall/snow,
@@ -4803,9 +4686,12 @@
 /turf/simulated/floor/snow,
 /area/liberty/dungeon/outside/frozen_forest/crashsite)
 "NR" = (
-/obj/structure/closet/crate/secure/bin,
-/obj/item/stack/material/animalhide/human,
-/turf/simulated/floor/wood/wild4,
+/obj/effect/decal/cleanable/blood{
+	blood_color = "#A10808";
+	color = "#A10808"
+	},
+/obj/item/ammo_magazine/ammobox/light_rifle_257_small,
+/turf/simulated/floor/snow,
 /area/liberty/dungeon/outside/frozen_forest/crashsite)
 "NU" = (
 /obj/item/ammo_casing/magnum_40{
@@ -4952,13 +4838,12 @@
 /area/liberty/dungeon/outside/farm)
 "ON" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/item/remains/ribcage,
 /obj/effect/decal/cleanable/blood{
 	blood_color = "#A10808";
 	color = "#A10808";
 	icon_state = "splatter3"
 	},
-/obj/item/clothing/suit/storage/toggle/liberass_jacket,
+/obj/item/gun/projectile/boltgun/rosefield,
 /turf/simulated/floor/wood/wild4,
 /area/liberty/dungeon/outside/farm)
 "OQ" = (
@@ -5265,19 +5150,9 @@
 	},
 /turf/simulated/floor/snow,
 /area/liberty/dungeon/outside/frozen_forest/crashsite)
-"QZ" = (
-/obj/item/remains/human,
-/obj/item/clothing/head/ushanka,
-/turf/simulated/floor/wood/wild4,
-/area/liberty/dungeon/outside/frozen_forest/crashsite)
 "Re" = (
 /obj/structure/flora/small/snow/rock2,
 /turf/simulated/floor/snow,
-/area/liberty/dungeon/outside/frozen_forest/crashsite)
-"Rf" = (
-/obj/structure/bed,
-/obj/item/stack/material/animalhide/human,
-/turf/simulated/floor/wood/wild4,
 /area/liberty/dungeon/outside/frozen_forest/crashsite)
 "Rg" = (
 /obj/effect/decal/cleanable/blood{
@@ -5358,14 +5233,7 @@
 /turf/simulated/floor/wood_old,
 /area/liberty/dungeon/outside/abandoned_outpost)
 "RJ" = (
-/obj/item/gun/projectile/shotgun/doublebarrel,
-/obj/effect/decal/cleanable/blood{
-	blood_color = "#A10808";
-	color = "#A10808";
-	icon_state = "splatter5"
-	},
-/obj/effect/decal/cleanable/dirt,
-/obj/item/clothing/under/snowjump,
+/obj/item/remains/human4,
 /turf/simulated/floor/wood/wild4,
 /area/liberty/dungeon/outside/frozen_forest/crashsite)
 "RK" = (
@@ -5385,7 +5253,6 @@
 	},
 /obj/machinery/light,
 /obj/effect/decal/cleanable/dirt,
-/obj/item/stack/material/animalhide/human,
 /turf/simulated/floor/wood/wild4,
 /area/liberty/dungeon/outside/frozen_forest/crashsite)
 "RQ" = (
@@ -5403,6 +5270,8 @@
 	color = "#A10808";
 	icon_state = "remainsdeer"
 	},
+/obj/item/remains/human2,
+/obj/item/trash/material/brokenarmorrebel6,
 /turf/simulated/floor/wood/wild4,
 /area/liberty/dungeon/outside/frozen_forest/crashsite)
 "RR" = (
@@ -5412,22 +5281,11 @@
 	color = "#A10808";
 	icon_state = "splatter1"
 	},
-/obj/item/clothing/head/ushanka,
 /turf/simulated/floor/wood/wild4,
 /area/liberty/dungeon/outside/farm)
 "RS" = (
 /turf/simulated/floor/snow,
 /area/liberty/dungeon/outside/frozen_forest/crashsite_cave)
-"RU" = (
-/obj/effect/decal/cleanable/blood{
-	blood_color = "#A10808";
-	color = "#A10808"
-	},
-/obj/item/clothing/suit/gorka/toggle/gorka/dark,
-/obj/item/clothing/accessory/scarf/furblack,
-/obj/item/clothing/under/snowjump,
-/turf/simulated/floor/wood/wild4,
-/area/liberty/dungeon/outside/frozen_forest/crashsite)
 "RW" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/table/woodentable,
@@ -5574,8 +5432,13 @@
 /turf/simulated/floor/snow,
 /area/liberty/dungeon/outside/frozen_forest/crashsite)
 "SW" = (
-/obj/item/remains/ribcage,
-/obj/item/stack/material/animalhide/human,
+/obj/effect/decal/cleanable/blood{
+	blood_color = "#A10808";
+	color = "#A10808"
+	},
+/obj/item/remains/human0,
+/obj/item/trash/material/brokenarmorrebel4,
+/obj/item/trash/material/brokenhelmetrebel2,
 /turf/simulated/floor/wood/wild4,
 /area/liberty/dungeon/outside/frozen_forest/crashsite)
 "SX" = (
@@ -5764,7 +5627,6 @@
 /area/liberty/dungeon/outside/hunter_cabin)
 "Uf" = (
 /obj/effect/decal/cleanable/dirt/snow,
-/obj/item/remains/ribcage,
 /obj/effect/decal/cleanable/blood{
 	blood_color = "#A10808";
 	color = "#A10808";
@@ -5775,12 +5637,13 @@
 	color = "#A10808";
 	icon_state = "splatter1"
 	},
+/obj/item/remains/human4,
+/obj/item/trash/material/brokenarmorrebel7,
 /turf/simulated/floor/snow,
 /area/liberty/dungeon/outside/frozen_forest/crashsite)
 "Uj" = (
 /obj/effect/decal/cleanable/dirt/snow,
 /obj/effect/decal/cleanable/blood/writing,
-/obj/item/remains/ribcage,
 /turf/simulated/floor/asteroid/dirt/dust,
 /area/liberty/dungeon/outside/farm)
 "Uk" = (
@@ -5798,7 +5661,6 @@
 /turf/simulated/floor/snow,
 /area/liberty/dungeon/outside/frozen_forest/crashsite_lakes)
 "Ur" = (
-/obj/item/remains,
 /obj/effect/decal/cleanable/blood{
 	blood_color = "#A10808";
 	color = "#A10808";
@@ -5809,6 +5671,7 @@
 	color = "#A10808";
 	icon_state = "splatter3"
 	},
+/obj/item/remains/human3,
 /turf/simulated/floor/wood/wild4,
 /area/liberty/dungeon/outside/frozen_forest/crashsite)
 "Us" = (
@@ -5930,17 +5793,12 @@
 /turf/simulated/floor/rock/dark,
 /area/liberty/dungeon/outside/shuttle_crash)
 "Vn" = (
-/obj/item/remains/human,
 /obj/effect/decal/cleanable/blood{
 	blood_color = "#A10808";
 	color = "#A10808";
-	icon_state = "itemblood"
+	icon_state = "mfloor5"
 	},
-/obj/effect/decal/cleanable/blood{
-	blood_color = "#A10808";
-	color = "#A10808";
-	icon_state = "gibup1"
-	},
+/obj/item/gun/projectile/automatic/duty,
 /turf/simulated/floor/snow,
 /area/liberty/dungeon/outside/frozen_forest/crashsite)
 "Vp" = (
@@ -6000,7 +5858,6 @@
 	color = "#A10808";
 	icon_state = "mgibbl5"
 	},
-/obj/item/stack/material/animalhide/human,
 /obj/item/clothing/suit/storage/toggle/liberass_jacket,
 /turf/simulated/floor/wood/wild4,
 /area/liberty/dungeon/outside/farm)
@@ -6211,8 +6068,9 @@
 	color = "#A10808";
 	icon_state = "splatter2"
 	},
-/obj/item/remains/ribcage,
-/obj/item/stack/material/animalhide/human,
+/obj/item/remains/human0,
+/obj/item/trash/material/brokenhelmetrebel2,
+/obj/item/trash/material/brokenarmorrebel1,
 /turf/simulated/floor/snow,
 /area/liberty/dungeon/outside/frozen_forest/crashsite)
 "Xu" = (
@@ -6232,7 +6090,6 @@
 /obj/item/ammo_casing/magnum_40{
 	amount = 6
 	},
-/obj/item/remains/human,
 /turf/simulated/floor/wood/wild4,
 /area/liberty/dungeon/outside/frozen_forest/crashsite)
 "XA" = (
@@ -6334,11 +6191,15 @@
 /turf/simulated/floor/snow,
 /area/liberty/dungeon/outside/frozen_forest/crashsite)
 "XV" = (
-/obj/item/ammo_casing/shotgun/ceramic{
-	amount = 5
-	},
+/obj/structure/table/bench/wooden,
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/plating/under,
+/obj/item/remains/human1,
+/obj/item/contraband/poster/placed/recruitment/rebels{
+	pixel_y = 32
+	},
+/obj/item/trash/material/brokenarmorrebel1,
+/obj/item/trash/material/brokenhelmetrebel4,
+/turf/simulated/floor/wood/wild4,
 /area/liberty/dungeon/outside/frozen_forest/crashsite)
 "XW" = (
 /obj/structure/flora/tree/snow/four,
@@ -6406,9 +6267,6 @@
 	color = "#A10808";
 	icon_state = "splatter3"
 	},
-/obj/item/clothing/suit/storage/vest,
-/obj/item/clothing/suit/storage/suitjacket/trenchcoat,
-/obj/item/clothing/under/snowjump,
 /turf/simulated/floor/wood/wild4,
 /area/liberty/dungeon/outside/frozen_forest/crashsite)
 "Yw" = (
@@ -6551,27 +6409,10 @@
 /obj/structure/flora/snowgrass/rockandgrass,
 /turf/simulated/floor/beach/water/ice,
 /area/liberty/dungeon/outside/frozen_forest/crashsite_lakes)
-"ZM" = (
-/obj/effect/decal/cleanable/blood{
-	blood_color = "#A10808";
-	color = "#A10808"
-	},
-/obj/effect/decal/cleanable/blood{
-	blood_color = "#A10808";
-	color = "#A10808";
-	icon_state = "mgibbl2"
-	},
-/obj/item/ammo_magazine/ammobox/light_rifle_257_small,
-/turf/simulated/floor/snow,
-/area/liberty/dungeon/outside/frozen_forest/crashsite)
 "ZP" = (
 /mob/living/carbon/superior_animal/vox/posin_thrower,
 /turf/simulated/floor/snow,
 /area/liberty/dungeon/outside/frozen_forest/crashsite)
-"ZR" = (
-/obj/item/clothing/under/snowjump,
-/turf/simulated/floor/wood/wild4,
-/area/liberty/dungeon/outside/farm)
 
 (1,1,1) = {"
 na
@@ -51692,8 +51533,8 @@ xo
 xo
 xo
 bz
-Km
-Km
+Dx
+BH
 Km
 OE
 es
@@ -79118,7 +78959,7 @@ Yz
 pf
 YA
 bm
-aY
+sR
 sR
 kc
 pf
@@ -79163,7 +79004,7 @@ Yz
 pf
 nN
 Nu
-sR
+if
 mP
 pf
 xU
@@ -79183,7 +79024,7 @@ GU
 lo
 xZ
 vd
-ZR
+fQ
 YT
 xZ
 qz
@@ -79319,8 +79160,8 @@ mK
 Yz
 pf
 AS
-Uk
-bF
+sR
+iP
 sR
 sR
 Mx
@@ -79380,13 +79221,13 @@ qz
 sz
 sz
 sz
-sV
+xZ
 nA
 oi
 xZ
 NW
 mm
-Gt
+fQ
 xZ
 sz
 Yz
@@ -79521,7 +79362,7 @@ Yz
 Yz
 pF
 iP
-aY
+sR
 wW
 sR
 sR
@@ -79583,7 +79424,7 @@ MD
 MD
 xZ
 xZ
-xZ
+sV
 xZ
 xZ
 JZ
@@ -79730,8 +79571,8 @@ sR
 pf
 yv
 pf
-Yz
-Yz
+ie
+NR
 Yz
 oY
 Yz
@@ -79754,7 +79595,7 @@ iP
 iP
 On
 sR
-sR
+RJ
 On
 iP
 sU
@@ -79927,12 +79768,12 @@ pf
 YA
 Mx
 yL
-iP
+bm
 ri
 pf
 pf
 pf
-eB
+Aw
 cF
 WC
 Yz
@@ -79953,14 +79794,14 @@ Yz
 CT
 pF
 cx
-iP
+Cn
 lH
 pf
 Rh
 sR
 dI
 Cg
-Yz
+No
 pf
 UE
 Yz
@@ -80128,15 +79969,15 @@ xU
 pf
 Ql
 Mx
-bF
-BM
+iP
+iP
 sR
 Rs
 PP
 pf
 mV
 Vn
-IA
+Yz
 do
 Yz
 Yz
@@ -80328,17 +80169,17 @@ mK
 Yz
 xU
 pf
+SW
+sR
 iP
 sR
 iP
-QZ
-ic
 sR
 sR
 Mx
 Jf
 aB
-mO
+Yz
 pf
 Mx
 pf
@@ -80364,7 +80205,7 @@ pf
 pf
 pf
 Sz
-tz
+OS
 cq
 No
 Yz
@@ -80538,11 +80379,11 @@ pf
 pf
 pf
 pf
-BH
 Yz
-ZM
+Yz
+Yz
 pf
-iP
+xO
 Fw
 iP
 Rh
@@ -80565,7 +80406,7 @@ Yz
 nG
 Yz
 Yz
-MR
+Yz
 kq
 No
 UE
@@ -80750,7 +80591,7 @@ iP
 sR
 sR
 sR
-ic
+iP
 iP
 Mx
 Yz
@@ -80946,9 +80787,9 @@ Yz
 kT
 Yz
 pf
-Rf
-Uk
-Rf
+LO
+sR
+LO
 iP
 sR
 LO
@@ -80998,7 +80839,7 @@ sz
 LK
 ms
 xC
-hL
+AX
 zE
 VU
 ne
@@ -81199,8 +81040,8 @@ sz
 sz
 yj
 wP
-av
-xG
+DY
+sz
 zE
 VU
 KQ
@@ -81942,7 +81783,7 @@ xU
 pf
 RY
 cP
-SW
+sR
 cQ
 VV
 TY
@@ -81985,9 +81826,9 @@ xU
 Yz
 YR
 yP
-ie
-BH
-BH
+bT
+Yz
+Yz
 Yz
 pf
 Kn
@@ -82165,7 +82006,7 @@ Mx
 sR
 pf
 wG
-NR
+Rh
 pf
 bL
 Yz
@@ -82176,7 +82017,7 @@ EY
 Yz
 pf
 XK
-iP
+Cn
 iP
 sR
 pf
@@ -82195,7 +82036,7 @@ pf
 ig
 sR
 fW
-if
+ix
 eR
 pf
 xU
@@ -82213,7 +82054,7 @@ mi
 GW
 gA
 lq
-ii
+hQ
 rh
 sz
 sz
@@ -82348,7 +82189,7 @@ sR
 XP
 Pl
 wD
-ic
+iP
 dz
 KD
 wD
@@ -82389,9 +82230,9 @@ xU
 Yz
 YR
 YR
-dd
+DW
 jH
-dd
+DW
 zm
 pf
 ci
@@ -82592,7 +82433,7 @@ Yz
 YR
 YR
 oO
-xO
+NP
 oO
 GA
 pf
@@ -82749,8 +82590,8 @@ YR
 Yz
 pf
 kc
-kY
-Bm
+sR
+sR
 wW
 sR
 mG
@@ -82784,7 +82625,7 @@ Yz
 pF
 sl
 XK
-QP
+IA
 pf
 pf
 pf
@@ -82793,9 +82634,9 @@ wf
 Sz
 YR
 YR
-BH
+Yz
 NM
-Cn
+YR
 wY
 Mx
 sR
@@ -82964,7 +82805,7 @@ iP
 pf
 eB
 Lt
-BH
+Yz
 pf
 Kh
 Rh
@@ -83363,8 +83204,8 @@ sR
 sR
 pf
 se
-RU
-eu
+iP
+kc
 pf
 Yz
 qU
@@ -83565,7 +83406,7 @@ dD
 dD
 pf
 va
-cP
+iP
 PW
 pf
 rI
@@ -83638,7 +83479,7 @@ Yz
 jg
 QO
 yz
-MB
+Id
 Yz
 CT
 Yz
@@ -84174,7 +84015,7 @@ rI
 YR
 YR
 eG
-ch
+xy
 nO
 Xo
 YR
@@ -85183,8 +85024,8 @@ pF
 Yz
 Yz
 fg
-BH
-BH
+Yz
+Yz
 fg
 Yz
 Yz
@@ -85397,7 +85238,7 @@ pf
 vJ
 pf
 sR
-nx
+Ok
 nS
 Ux
 Rr
@@ -85420,14 +85261,14 @@ pf
 Yz
 Yz
 Yz
-MH
+oQ
 UK
 Yz
 UK
 pf
-pj
-vJ
-RJ
+XV
+dd
+Dr
 Af
 bh
 lg
@@ -85585,11 +85426,11 @@ Mx
 On
 pf
 Ls
-BH
+Yz
 Gz
 jH
 NP
-BH
+Yz
 pf
 Qd
 iC
@@ -85628,8 +85469,8 @@ Yz
 Sn
 pf
 Kn
-sR
-XV
+nx
+Io
 dN
 qB
 sR
@@ -85802,7 +85643,7 @@ Io
 iP
 XH
 Ga
-Ux
+MH
 Ok
 Uk
 pf
@@ -85826,7 +85667,7 @@ OV
 oQ
 No
 mn
-BH
+Yz
 Yz
 pf
 pf
@@ -85990,8 +85831,8 @@ sR
 pf
 Yz
 Yz
-BH
-Aw
+Yz
+mK
 Yz
 Yz
 pf
@@ -86023,7 +85864,7 @@ pf
 aN
 IR
 pf
-BH
+Yz
 dJ
 IG
 Sn
@@ -86211,7 +86052,7 @@ LG
 Ry
 Nr
 tZ
-Dx
+pR
 pf
 Tk
 Rh
