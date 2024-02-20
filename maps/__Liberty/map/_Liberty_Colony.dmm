@@ -45554,7 +45554,6 @@
 	desc = "A very used syringe."
 	},
 /obj/effect/decal/cleanable/blood{
-	blood_color = ssssssssss;
 	color = "#A10808";
 	icon_state = "mgibbl5"
 	},
