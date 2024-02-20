@@ -5809,6 +5809,12 @@
 	},
 /turf/simulated/floor/tiled/techmaint,
 /area/liberty/maintenance/substation/medical)
+"bfT" = (
+/obj/effect/decal/cleanable/blood/splatter{
+	icon_state = "itemblood"
+	},
+/turf/simulated/floor/fixed/fgrass,
+/area/liberty/maintenance/undergroundsewerwest)
 "bgk" = (
 /obj/effect/decal/cleanable/rubble,
 /obj/effect/decal/cleanable/dirt,
@@ -7488,6 +7494,16 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/liberty/crew_quarters/techshop)
+"bxd" = (
+/obj/machinery/light{
+	dir = 8
+	},
+/obj/effect/decal/cleanable/filth{
+	icon_state = "itemblood"
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor/industrial_pristine/white_large_slates,
+/area/liberty/maintenance/undergroundfsewerplague)
 "bxk" = (
 /obj/machinery/light{
 	dir = 4
@@ -11574,11 +11590,8 @@
 /turf/simulated/floor/industrial/concrete_bricks,
 /area/liberty/maintenance/undergroundfloor1east)
 "ciB" = (
-/obj/structure/bonfire/permanent,
-/obj/machinery/door/blast/shutters/glass{
-	name = "Fireplace  Cover"
-	},
 /obj/effect/decal/cleanable/dirt,
+/obj/structure/table/woodentable,
 /turf/simulated/floor/tiled/white/gray_platform,
 /area/liberty/maintenance/undergroundfloor2north)
 "ciC" = (
@@ -15874,6 +15887,13 @@
 /obj/structure/table/standard,
 /turf/simulated/floor/tiled/white/techfloor_grid,
 /area/liberty/pros/prep)
+"cYq" = (
+/obj/effect/decal/cleanable/blood/writing{
+	dir = 4
+	},
+/obj/effect/decal/cleanable/blood/splatter,
+/turf/simulated/floor/fixed/fgrass,
+/area/liberty/maintenance/undergroundsewerwest)
 "cYs" = (
 /obj/structure/lattice,
 /obj/machinery/newscaster{
@@ -31453,6 +31473,7 @@
 /obj/effect/decal/cleanable/cobweb{
 	dir = 4
 	},
+/obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/industrial_pristine/white_large_slates,
 /area/liberty/maintenance/undergroundfsewerplague)
 "fVY" = (
@@ -36518,7 +36539,8 @@
 /area/liberty/maintenance/cavenightmare)
 "gTf" = (
 /obj/effect/golemrune{
-	icon_state = "6"
+	icon_state = "3";
+	blood_color = "#A10808"
 	},
 /turf/simulated/floor/fixed/fgrass,
 /area/liberty/maintenance/undergroundsewerwest)
@@ -37417,6 +37439,11 @@
 /obj/item/arrow/quill,
 /turf/simulated/floor/wood,
 /area/liberty/maintenance/undergroundfloor2north)
+"hbL" = (
+/obj/effect/decal/cleanable/blood/writing,
+/obj/effect/decal/cleanable/blood/splatter,
+/turf/simulated/floor/fixed/fgrass,
+/area/liberty/maintenance/undergroundsewerwest)
 "hbP" = (
 /obj/landmark/storyevent/midgame_stash_spawn,
 /turf/simulated/floor/wood/wild4,
@@ -45521,9 +45548,18 @@
 /turf/unsimulated/wall/snow,
 /area/liberty/outside/forest)
 "iDT" = (
-/obj/machinery/door/firedoor,
-/turf/simulated/floor/tiled/white/gray_platform,
-/area/liberty/maintenance/undergroundfloor2north)
+/obj/item/reagent_containers/syringe{
+	visible_name = "a very used syringe";
+	name = "very used syringe";
+	desc = "A very used syringe."
+	},
+/obj/effect/decal/cleanable/blood{
+	blood_color = ssssssssss;
+	color = "#A10808";
+	icon_state = "mgibbl5"
+	},
+/turf/simulated/floor/fixed/fgrass,
+/area/liberty/maintenance/undergroundsewerwest)
 "iDV" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/wood/wild3,
@@ -52784,6 +52820,7 @@
 /obj/effect/decal/cleanable/cobweb{
 	dir = 4
 	},
+/obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/industrial_pristine/navy_slates,
 /area/liberty/maintenance/undergroundfsewerplague)
 "jZh" = (
@@ -58514,9 +58551,7 @@
 /turf/simulated/floor/tiled/dark/bluecorner,
 /area/liberty/security/sechall)
 "lds" = (
-/obj/machinery/light{
-	dir = 8
-	},
+/obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/industrial_pristine/white_large_slates,
 /area/liberty/maintenance/undergroundfsewerplague)
@@ -74036,10 +74071,6 @@
 /turf/simulated/floor/tiled/techmaint,
 /area/liberty/maintenance/undergroundfloor2south)
 "ofM" = (
-/obj/structure/bonfire/permanent,
-/obj/machinery/door/blast/shutters/glass{
-	name = "Fireplace  Cover"
-	},
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/white/gray_platform,
@@ -77283,6 +77314,18 @@
 /obj/structure/reagent_dispensers/watertank,
 /turf/simulated/floor/rock,
 /area/liberty/maintenance/cavenightmare)
+"oJA" = (
+/obj/effect/decal/cleanable/blood/writing,
+/obj/effect/decal/cleanable/blood/splatter{
+	icon_state = "itemblood"
+	},
+/obj/effect/decal/cleanable/blood{
+	blood_color = "#A10808";
+	color = "#A10808";
+	icon_state = "mfloor6"
+	},
+/turf/simulated/floor/fixed/fgrass,
+/area/liberty/maintenance/undergroundsewerwest)
 "oJH" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/table/steel,
@@ -107835,6 +107878,9 @@
 /obj/effect/decal/cleanable/blood/writing{
 	dir = 4
 	},
+/obj/effect/decal/cleanable/blood/splatter{
+	icon_state = "itemblood"
+	},
 /turf/simulated/floor/fixed/fgrass,
 /area/liberty/maintenance/undergroundsewerwest)
 "utt" = (
@@ -119878,6 +119924,14 @@
 /obj/random/rations/roachcube,
 /turf/simulated/floor/industrial/navy_slates,
 /area/liberty/maintenance/undergroundfloor2north)
+"wHf" = (
+/obj/effect/decal/cleanable/blood{
+	blood_color = "#A10808";
+	color = "#A10808";
+	icon_state = "splatter1"
+	},
+/turf/simulated/floor/fixed/fgrass,
+/area/liberty/maintenance/undergroundsewerwest)
 "wHj" = (
 /obj/effect/floor_decal/industrial/outline/yellow,
 /obj/machinery/power/port_gen/pacman/mrs/anchored,
@@ -125332,6 +125386,13 @@
 	},
 /turf/simulated/floor/tiled/steel,
 /area/liberty/command/courtroom)
+"xHF" = (
+/obj/effect/decal/cleanable/filth{
+	icon_state = "itemblood"
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor/industrial_pristine/white_large_slates,
+/area/liberty/maintenance/undergroundfsewerplague)
 "xHG" = (
 /obj/machinery/alarm{
 	dir = 8;
@@ -127504,6 +127565,15 @@
 /area/liberty/rnd/xenoflora)
 "ych" = (
 /obj/item/remains/human5,
+/obj/effect/decal/cleanable/blood/splatter{
+	icon_state = "gib3"
+	},
+/obj/effect/decal/cleanable/blood/splatter{
+	icon_state = "itemblood"
+	},
+/obj/effect/decal/cleanable/blood/splatter{
+	icon_state = "gib2"
+	},
 /turf/simulated/floor/fixed/fgrass,
 /area/liberty/maintenance/undergroundsewerwest)
 "yck" = (
@@ -127952,9 +128022,6 @@
 /turf/simulated/floor/tiled/white,
 /area/liberty/medical/virology)
 "ygp" = (
-/obj/structure/bed/chair/sofa/black/right{
-	pixel_x = -1
-	},
 /obj/effect/floor_decal/border/carpet/black{
 	dir = 1
 	},
@@ -130223,9 +130290,9 @@ cwX
 ulk
 fPU
 wdL
-wdL
+oJA
 gTf
-wdL
+hbL
 jon
 xlz
 ulk
@@ -130424,9 +130491,9 @@ cwX
 cwX
 cwX
 sze
-xzp
+wHf
 ych
-qgN
+cYq
 xzp
 xzp
 rMO
@@ -130626,8 +130693,8 @@ cwX
 cwX
 cwX
 sze
-mPM
-xzp
+iDT
+bfT
 uts
 xzp
 xzp
@@ -154307,9 +154374,9 @@ fhE
 fhE
 fhE
 fhE
-fhE
-fhE
-fhE
+fqy
+fqy
+fqy
 fqy
 fqy
 ipI
@@ -154509,9 +154576,9 @@ fhE
 fhE
 fhE
 fhE
-fhE
-fhE
 fqy
+xHF
+bxd
 fVT
 fqy
 bLH
@@ -154711,10 +154778,10 @@ fhE
 fhE
 fhE
 fhE
-fhE
-fhE
 fqy
-bKp
+xHF
+lds
+lds
 fqy
 bLH
 lWG
@@ -154913,8 +154980,8 @@ fhE
 fhE
 fhE
 fhE
-fhE
 fqy
+bKp
 lds
 bKp
 qIE
@@ -155115,8 +155182,8 @@ fhE
 fhE
 fhE
 fhE
-fhE
 fqy
+bKp
 kOa
 kOa
 fqy
@@ -243305,14 +243372,14 @@ eIB
 bUS
 nQR
 nDQ
-ciB
+djA
 eIB
 bzq
 eIB
 bUS
 aNs
 ygp
-ciB
+djA
 eIB
 eIB
 jet
@@ -244105,21 +244172,21 @@ eIB
 eIB
 eIB
 eIB
-iDT
+vaU
 eIB
 eIB
 eIB
 eIB
 dNh
 dNh
-iDT
+vaU
 eIB
 eIB
 eIB
 eIB
 eIB
 dNh
-iDT
+vaU
 eIB
 eIB
 eIB
