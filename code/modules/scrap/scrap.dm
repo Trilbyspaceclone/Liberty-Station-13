@@ -71,8 +71,11 @@ GLOBAL_LIST_EMPTY(scrap_base_cache)
 		if(2)
 			for(var/i in 1 to 4)
 				var/obj/item/trash/projtype = pick(subtypesof(/obj/item/trash))
-				if(projtype.cant_rand_spawn)
+				var/obj/item/trash/trash_to_spawn = projtype
+
+				if(trash_to_spawn.cant_rand_spawn)
 					projtype = pick(/obj/item/stack/rods, /obj/item/material/shard)
+
 				var/obj/item/projectile = new projtype(loc)
 				projectile.throw_at(locate(loc.x + rand(10) - 5, loc.y + rand(10) - 5, loc.z), 3, 1)
 	return INITIALIZE_HINT_QDEL
