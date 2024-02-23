@@ -95,7 +95,6 @@
 	icon_state = "armor_scrap_IE0"
 	matter = list(MATERIAL_STEEL = 4)
 	icon_state = "armor_scrap_IE0"
-	cant_rand_spawn = TRUE
 
 /obj/item/trash/material/brokenhelmetIE //scrap metal but with new sprite and lore
 	name = "Remains of Iron Eagle Helmet"
@@ -103,70 +102,61 @@
 	icon_state = "helmet_scrap_IE0"
 	matter = list(MATERIAL_STEEL = 4)
 	icon_state = "helmet_scrap_IE0"
-	cant_rand_spawn = TRUE
 
 /obj/item/trash/material/brokenarmorIE1 //scrap metal but with new sprite and lore
 	name = "Remains of Iron Eagle"
 	desc = "A few deformated, unusable and broken pieces of armor, they seem to be from an Iron Eagle Trooper who died holding his position"
 	icon_state = "armor_scrap_IE1"
 	matter = list(MATERIAL_STEEL = 4)
-	cant_rand_spawn = TRUE
 
 /obj/item/trash/material/brokenhelmetIE1 //scrap metal but with new sprite and lore
 	name = "Remains of Iron Eagle Helmet"
 	desc = "A few deformated, unusable and broken pieces of an helmet, they seem to be from an Iron Eagle Trooper who died holding his position"
 	icon_state = "helmet_scrap_IE1"
 	matter = list(MATERIAL_STEEL = 4)
-	cant_rand_spawn = TRUE
 
 /obj/item/trash/material/brokenarmorIE2 //scrap metal but with new sprite and lore
 	name = "Remains of Iron Eagle"
 	desc = "A few deformated, unusable and broken pieces of armor, they seem to be from an Iron Eagle Trooper who died holding his position"
 	icon_state = "armor_scrap_IE2"
 	matter = list(MATERIAL_STEEL = 4)
-	cant_rand_spawn = TRUE
 
 /obj/item/trash/material/brokenhelmetIE2 //scrap metal but with new sprite and lore
 	name = "Remains of Iron Eagle Helmet"
 	desc = "A few deformated, unusable and broken pieces of an helmet, they seem to be from an Iron Eagle Trooper who died holding his position"
 	icon_state = "helmet_scrap_IE2"
 	matter = list(MATERIAL_STEEL = 4)
-	cant_rand_spawn = TRUE
 
 /obj/item/trash/material/brokenarmorIE3 //scrap metal but with new sprite and lore
 	name = "Remains of Iron Eagle"
 	desc = "A few deformated, unusable and broken pieces of armor, they seem to be from an Iron Eagle Trooper who died holding his position"
 	icon_state = "armor_scrap_IE3"
 	matter = list(MATERIAL_STEEL = 4)
-	cant_rand_spawn = TRUE
 
 /obj/item/trash/material/brokenhelmetIE3 //scrap metal but with new sprite and lore
 	name = "Remains of Iron Eagle Helmet"
 	desc = "A few deformated, unusable and broken pieces of an helmet, they seem to be from an Iron Eagle Trooper who died holding his position"
 	icon_state = "helmet_scrap_IE3"
 	matter = list(MATERIAL_STEEL = 4)
-	cant_rand_spawn = TRUE
 
 /obj/item/trash/material/brokenarmorIE4 //scrap metal but with new sprite and lore
 	name = "Remains of Iron Eagle"
 	desc = "A few deformated, unusable and broken pieces of armor, they seem to be from an Iron Eagle Trooper who died holding his position"
 	icon_state = "armor_scrap_IE4"
 	matter = list(MATERIAL_STEEL = 4)
-	cant_rand_spawn = TRUE
 
 /obj/item/trash/material/brokenhelmetIE4 //scrap metal but with new sprite and lore
 	name = "Remains of Iron Eagle Helmet"
 	desc = "A few deformated, unusable and broken pieces of an helmet, they seem to be from an Iron Eagle Trooper who died holding his position"
 	icon_state = "helmet_scrap_IE4"
 	matter = list(MATERIAL_STEEL = 4)
-	cant_rand_spawn = TRUE
+
 //voidsuits scrap
 /obj/item/trash/material/brokenarmorIE5 //scrap metal but with new sprite and lore
 	name = "Remains of Iron Eagle Special Operative"
 	desc = "A few deformated, unusable and broken pieces of an Iron Eagle Specialist, looks like the bugs had trouble opening the armor, is clearly unusable but might have good materials in the remnants."
 	icon_state = "armor_scrap_IE5"
 	matter = list(MATERIAL_STEEL = 5, MATERIAL_PLASTEEL = 4)
-	cant_rand_spawn = TRUE
 
 	//custodian squire helmet scraps
 /obj/item/trash/material/brokenhelmetsquire0 //scrap metal but with new sprite and lore
@@ -174,35 +164,30 @@
 	desc = "A few deformated, unusable and broken pieces of an Custodian Squire helmet, they seem to be extremely damaged to be used as anything, the metals seem to be reusable..."
 	icon_state = "helmet_scrap_squire_0"
 	matter = list(MATERIAL_STEEL = 4,MATERIAL_SILK = 2)
-	cant_rand_spawn = TRUE
 
 /obj/item/trash/material/brokenhelmetsquire1 //scrap metal but with new sprite and lore
 	name = "Remains of Custodian Squire Helmet"
 	desc = "A few deformated, unusable and broken pieces of an Custodian Squire helmet, they seem to be extremely damaged to be used as anything, the metals seem to be reusable..."
 	icon_state = "helmet_scrap_squire_1"
 	matter = list(MATERIAL_STEEL = 4,MATERIAL_SILK = 2)
-	cant_rand_spawn = TRUE
 
 /obj/item/trash/material/brokenhelmetsquire2 //scrap metal but with new sprite and lore
 	name = "Remains of Custodian Squire Helmet"
 	desc = "A few deformated, unusable and broken pieces of an Custodian Squire helmet, they seem to be extremely damaged to be used as anything, the metals seem to be reusable..."
 	icon_state = "helmet_scrap_squire_2"
 	matter = list(MATERIAL_STEEL = 4,MATERIAL_SILK = 2)
-	cant_rand_spawn = TRUE
 
 /obj/item/trash/material/brokenhelmetsquire3 //scrap metal but with new sprite and lore
 	name = "Remains of Custodian Squire Helmet"
 	desc = "A few deformated, unusable and broken pieces of an Custodian Squire helmet, they seem to be extremely damaged to be used as anything, the metals seem to be reusable..."
 	icon_state = "helmet_scrap_squire_3"
 	matter = list(MATERIAL_STEEL = 4,MATERIAL_SILK = 2)
-	cant_rand_spawn = TRUE
 
 /obj/item/trash/material/brokenhelmetsquire4 //scrap metal but with new sprite and lore
 	name = "Remains of Custodian Squire Helmet"
 	desc = "A few deformated, unusable and broken pieces of an Custodian Squire helmet, they seem to be extremely damaged to be used as anything, the metals seem to be reusable..."
 	icon_state = "helmet_scrap_squire_4"
 	matter = list(MATERIAL_STEEL = 4,MATERIAL_SILK = 2)
-	cant_rand_spawn = TRUE
 
 	//custodian squire armor scraps
 obj/item/trash/material/brokenarmorsquire0 //scrap metal but with new sprite and lore
@@ -210,49 +195,42 @@ obj/item/trash/material/brokenarmorsquire0 //scrap metal but with new sprite and
 	desc = "A few deformated, unusable and broken pieces of Custodian Squire armor, they seem to be far away from be fixed and re used, they still having some remains of material..."
 	icon_state = "armor_scrap_squire_0"
 	matter = list(MATERIAL_STEEL = 4,MATERIAL_SILK = 2, MATERIAL_CARBON_FIBER = 1)
-	cant_rand_spawn = TRUE
 
 obj/item/trash/material/brokenarmorsquire1 //scrap metal but with new sprite and lore
 	name = "Remains of Custodian Squire Armor"
 	desc = "A few deformated, unusable and broken pieces of Custodian Squire armor, they seem to be far away from be fixed and re used, they still having some remains of material..."
 	icon_state = "armor_scrap_squire_1"
 	matter = list(MATERIAL_STEEL = 4,MATERIAL_SILK = 2, MATERIAL_CARBON_FIBER = 1)
-	cant_rand_spawn = TRUE
 
 obj/item/trash/material/brokenarmorsquire2 //scrap metal but with new sprite and lore
 	name = "Remains of Custodian Squire Armor"
 	desc = "A few deformated, unusable and broken pieces of Custodian Squire armor, they seem to be far away from be fixed and re used, they still having some remains of material..."
 	icon_state = "armor_scrap_squire_2"
 	matter = list(MATERIAL_STEEL = 4,MATERIAL_SILK = 2, MATERIAL_CARBON_FIBER = 1)
-	cant_rand_spawn = TRUE
 
 obj/item/trash/material/brokenarmorsquire3 //scrap metal but with new sprite and lore
 	name = "Remains of Custodian Squire Armor"
 	desc = "A few deformated, unusable and broken pieces of Custodian Squire armor, they seem to be far away from be fixed and re used, they still having some remains of material..."
 	icon_state = "armor_scrap_squire_3"
 	matter = list(MATERIAL_STEEL = 4,MATERIAL_SILK = 2, MATERIAL_CARBON_FIBER = 1)
-	cant_rand_spawn = TRUE
 
 obj/item/trash/material/brokenarmorsquire4 //scrap metal but with new sprite and lore
 	name = "Remains of Custodian Squire Armor"
 	desc = "A few deformated, unusable and broken pieces of Custodian Squire armor, they seem to be far away from be fixed and re used, they still having some remains of material..."
 	icon_state = "armor_scrap_squire_4"
 	matter = list(MATERIAL_STEEL = 4,MATERIAL_SILK = 2, MATERIAL_CARBON_FIBER = 1)
-	cant_rand_spawn = TRUE
 
 obj/item/trash/material/brokenarmorsquire5 //scrap metal but with new sprite and lore
 	name = "Remains of Custodian Squire Armor"
 	desc = "A few deformated, unusable and broken pieces of Custodian Squire armor, they seem to be far away from be fixed and re used, they still having some remains of material..."
 	icon_state = "armor_scrap_squire_5"
 	matter = list(MATERIAL_STEEL = 4,MATERIAL_SILK = 2, MATERIAL_CARBON_FIBER = 1)
-	cant_rand_spawn = TRUE
 
 obj/item/trash/material/brokenarmorsquire6 //scrap metal but with new sprite and lore
 	name = "Remains of Custodian Squire Armor"
 	desc = "A few deformated, unusable and broken pieces of Custodian Squire armor, they seem to be far away from be fixed and re used, they still having some remains of material..."
 	icon_state = "armor_scrap_squire_6"
 	matter = list(MATERIAL_STEEL = 4,MATERIAL_SILK = 2, MATERIAL_CARBON_FIBER = 1)
-	cant_rand_spawn = TRUE
 
 //Khambataar Rebels Remains
 
@@ -262,56 +240,48 @@ obj/item/trash/material/brokenarmorrebel0 //scrap metal but with new sprite and 
 	desc = "A few deformated, unusable and broken pieces of the well known Populist Fighters, they seem to be far away from be fixed and re used, they still having some remains of materials and some leather..."
 	icon_state = "armor_scrap_rebel_0"
 	matter = list(MATERIAL_STEEL = 4, MATERIAL_LEATHER = 1)
-	cant_rand_spawn = TRUE
 
 obj/item/trash/material/brokenarmorrebel1 //scrap metal but with new sprite and lore
 	name = "Remains of Populist Fighter"
 	desc = "A few deformated, unusable and broken pieces of the well known Populist Fighters, they seem to be far away from be fixed and re used, they still having some remains of materials and some leather..."
 	icon_state = "armor_scrap_rebel_1"
 	matter = list(MATERIAL_STEEL = 4, MATERIAL_LEATHER = 1)
-	cant_rand_spawn = TRUE
 
 obj/item/trash/material/brokenarmorrebel2 //scrap metal but with new sprite and lore
 	name = "Remains of Populist Fighter"
 	desc = "A few deformated, unusable and broken pieces of the well known Populist Fighters, they seem to be far away from be fixed and re used, they still having some remains of materials and some leather..."
 	icon_state = "armor_scrap_rebel_2"
 	matter = list(MATERIAL_STEEL = 4, MATERIAL_LEATHER = 1)
-	cant_rand_spawn = TRUE
 
 obj/item/trash/material/brokenarmorrebel3 //scrap metal but with new sprite and lore
 	name = "Remains of Populist Fighter"
 	desc = "A few deformated, unusable and broken pieces of the well known Populist Fighters, they seem to be far away from be fixed and re used, they still having some remains of materials and some leather..."
 	icon_state = "armor_scrap_rebel_3"
 	matter = list(MATERIAL_STEEL = 4, MATERIAL_LEATHER = 1)
-	cant_rand_spawn = TRUE
 
 obj/item/trash/material/brokenarmorrebel4 //scrap metal but with new sprite and lore
 	name = "Remains of Populist Fighter"
 	desc = "A few deformated, unusable and broken pieces of the well known Populist Fighters, they seem to be far away from be fixed and re used, they still having some remains of materials and some leather..."
 	icon_state = "armor_scrap_rebel_4"
 	matter = list(MATERIAL_STEEL = 4, MATERIAL_LEATHER = 1)
-	cant_rand_spawn = TRUE
 
 obj/item/trash/material/brokenarmorrebel5 //scrap metal but with new sprite and lore
 	name = "Remains of Populist Fighter"
 	desc = "A few deformated, unusable and broken pieces of the well known Populist Fighters, they seem to be far away from be fixed and re used, they still having some remains of materials and some leather..."
 	icon_state = "armor_scrap_rebel_5"
 	matter = list(MATERIAL_STEEL = 4, MATERIAL_LEATHER = 1)
-	cant_rand_spawn = TRUE
 
 obj/item/trash/material/brokenarmorrebel6 //scrap metal but with new sprite and lore
 	name = "Remains of Populist Fighter"
 	desc = "A few deformated, unusable and broken pieces of the well known Populist Fighters, they seem to be far away from be fixed and re used, they still having some remains of materials and some leather..."
 	icon_state = "armor_scrap_rebel_6"
 	matter = list(MATERIAL_STEEL = 4, MATERIAL_LEATHER = 1)
-	cant_rand_spawn = TRUE
 
 obj/item/trash/material/brokenarmorrebel7 //scrap metal but with new sprite and lore
 	name = "Remains of Populist Fighter"
 	desc = "A few deformated, unusable and broken pieces of the well known Populist Fighters, they seem to be far away from be fixed and re used, they still having some remains of materials and some leather..."
 	icon_state = "armor_scrap_rebel_7"
 	matter = list(MATERIAL_STEEL = 4, MATERIAL_LEATHER = 1)
-	cant_rand_spawn = TRUE
 
 //Helmets
 
@@ -320,53 +290,44 @@ obj/item/trash/material/brokenarmorrebel7 //scrap metal but with new sprite and 
 	desc = "A few deformated, unusable and broken pieces of an improvised helmet, they seem to be from an rebel"
 	icon_state = "helmet_scrap_rebel_0"
 	matter = list(MATERIAL_STEEL = 4)
-	cant_rand_spawn = TRUE
 
 /obj/item/trash/material/brokenhelmetrebel1//scrap metal but with new sprite and lore
 	name = "Remains of an Improvised Helmet"
 	desc = "A few deformated, unusable and broken pieces of an improvised helmet, they seem to be from an rebel"
 	icon_state = "helmet_scrap_rebel_1"
 	matter = list(MATERIAL_STEEL = 4)
-	cant_rand_spawn = TRUE
 
 /obj/item/trash/material/brokenhelmetrebel2 //scrap metal but with new sprite and lore
 	name = "Remains of an Improvised Helmet"
 	desc = "A few deformated, unusable and broken pieces of an improvised helmet, they seem to be from an rebel"
 	icon_state = "helmet_scrap_rebel_2"
 	matter = list(MATERIAL_STEEL = 4)
-	cant_rand_spawn = TRUE
 
 /obj/item/trash/material/brokenhelmetrebel3 //scrap metal but with new sprite and lore
 	name = "Remains of an Improvised Helmet"
 	desc = "A few deformated, unusable and broken pieces of an improvised helmet, they seem to be from an rebel"
 	icon_state = "helmet_scrap_rebel_3"
 	matter = list(MATERIAL_STEEL = 4)
-	cant_rand_spawn = TRUE
 
 /obj/item/trash/material/brokenhelmetrebel4 //scrap metal but with new sprite and lore
 	name = "Remains of an Improvised Helmet"
 	desc = "A few deformated, unusable and broken pieces of an improvised helmet, they seem to be from an rebel"
 	icon_state = "helmet_scrap_rebel_4"
 	matter = list(MATERIAL_STEEL = 4)
-	cant_rand_spawn = TRUE
-
 /obj/item/trash/material/brokenhelmetrebel5 //scrap metal but with new sprite and lore
 	name = "Remains of an Improvised Helmet"
 	desc = "A few deformated, unusable and broken pieces of an improvised helmet, they seem to be from an rebel"
 	icon_state = "helmet_scrap_rebel_5"
 	matter = list(MATERIAL_STEEL = 4)
-	cant_rand_spawn = TRUE
 
 /obj/item/trash/material/brokenhelmetrebel6 //scrap metal but with new sprite and lore
 	name = "Remains of an Improvised Helmet"
 	desc = "A few deformated, unusable and broken pieces of an improvised helmet, they seem to be from an rebel"
 	icon_state = "helmet_scrap_rebel_6"
 	matter = list(MATERIAL_STEEL = 4)
-	cant_rand_spawn = TRUE
 
 /obj/item/trash/material/brokenhelmetrebel7 //scrap metal but with new sprite and lore
 	name = "Remains of an Improvised Helmet"
 	desc = "A few deformated, unusable and broken pieces of an improvised helmet, they seem to be from an rebel"
 	icon_state = "helmet_scrap_rebel_7"
 	matter = list(MATERIAL_STEEL = 4)
-	cant_rand_spawn = TRUE

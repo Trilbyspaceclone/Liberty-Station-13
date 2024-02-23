@@ -8,7 +8,6 @@
 	w_class = ITEM_SIZE_SMALL
 	matter = list(MATERIAL_PLASTIC = 1)
 	preloaded_reagents = list("plasticide" = 4)
-	var/cant_rand_spawn = FALSE
 
 /obj/item/trash/attack(mob/M, mob/living/user)
 	return
