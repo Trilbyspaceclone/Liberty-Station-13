@@ -70,7 +70,7 @@ GLOBAL_LIST_EMPTY(scrap_base_cache)
 				projectile.throw_at(locate(loc.x + rand(40) - 20, loc.y + rand(40) - 20, loc.z), 81, pick(1,3,80,80))
 		if(2)
 			for(var/i in 1 to 4)
-				var/obj/item/trash/projtype = pick(subtypesof(/obj/item/trash))
+				var/list/projtype = pick(subtypesof(/obj/item/trash))
 				var/obj/item/trash/trash_to_spawn = projtype[1]
 
 				if(trash_to_spawn.cant_rand_spawn)
