@@ -32,7 +32,7 @@ var/global/list/random_junk
 		random_junk -= /obj/item/trash/syndi_cakes
 		random_junk -= /obj/item/trash/tray
 	var/picked_trash = pick(random_junk)
-	var/obj/item/trash/trash_to_spawn = picked_trash
+	var/obj/item/trash/trash_to_spawn = picked_trash[1]
 
 	if(trash_to_spawn.cant_rand_spawn)
 		picked_trash = pick(/obj/item/stack/rods, /obj/item/material/shard, /obj/item/material/shard/shrapnel)

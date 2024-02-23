@@ -71,7 +71,7 @@ GLOBAL_LIST_EMPTY(scrap_base_cache)
 		if(2)
 			for(var/i in 1 to 4)
 				var/obj/item/trash/projtype = pick(subtypesof(/obj/item/trash))
-				var/obj/item/trash/trash_to_spawn = projtype
+				var/obj/item/trash/trash_to_spawn = projtype[1]
 
 				if(trash_to_spawn.cant_rand_spawn)
 					projtype = pick(/obj/item/stack/rods, /obj/item/material/shard)
