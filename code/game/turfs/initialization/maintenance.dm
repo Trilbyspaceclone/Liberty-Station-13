@@ -31,7 +31,10 @@ var/global/list/random_junk
 		random_junk -= /obj/item/trash/snack_bowl
 		random_junk -= /obj/item/trash/syndi_cakes
 		random_junk -= /obj/item/trash/tray
-	return pick(random_junk)
+	var/obj/item/trash/picked_trash = pick(random_junk)
+	if(picked_trash.cant_rand_spawn)
+		picked_trash = pick(/obj/item/stack/rods, /obj/item/material/shard, /obj/item/material/shard/shrapnel)
+	return picked_trash
 
 /datum/turf_initializer/maintenance/proc/attempt_web(var/turf/simulated/T)
 	var/turf/north_turf = get_step(T, NORTH)
